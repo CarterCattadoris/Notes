@@ -74,3 +74,15 @@ For the IH, suppose $P(x,y,z)$ is true: $x+y$ is positive and $(x+y) \cdot z \le
 We NTS: $P(x+z, y-z, z-3)$ is true: 
 	$(x+z) + (y-z)$ is positive
 	$((x+z)+(y-z)) \cdot (z-3) \leq 60$
+
+We see that:
+	$x+z+y-z = x+y$, which is positive by IH
+	$((x+z)+(y-z)) \cdot (z-3) = (x+y) \cdot (z-3) = z(x+y)-3(x+y)$
+
+By the IH, $(x+y) \cdot z \leq 60$, and $3(x+y)$ must be positive, because $x+y$ is
+Hence, $z(x+y)-3(x+y) \leq 60$, and hence $P(x+z, y-z, z-3)$ is true
+
+Thus, for all $(x,y,z) \in W$, the conditional:
+$P(x,y,z) \to P(x+z, y-z, z-3)$ is true
+
+By the basis, inductive step, and structural induction, the claim is true
