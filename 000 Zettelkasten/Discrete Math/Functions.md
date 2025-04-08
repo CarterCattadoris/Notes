@@ -3,7 +3,7 @@ Status: #idea
 Tags:[[Relations]]
 
 A relation f is a function provided that
-	for all $a,b,c, \space if (a,b) \in f$ and $(a,c) \in f, $ then $b=c$
+	for all $a,b,c, \space if (a,b) \in f$ and $(a,c) \in f,$ then $b=c$
 (That is, no object a appears as the first component of two different pairs.)
 
 ### Examples:  
