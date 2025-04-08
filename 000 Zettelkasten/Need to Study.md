@@ -10,11 +10,12 @@ Consider the set A of strings, which is defined recursively as follows:
 Thus, all elements of A are strings constructed from just four symbols: 0, 1, 2, and 3.  
 
 1. List five elements of A.  
-2. 
-3. Suppose you were to use structural induction to prove that some property P holds of all elements of the set A.  
+00302302, 001212, 30211122, 12113022, 000030230200302302
+2. Suppose you were to use structural induction to prove that some property P holds of all elements of the set A.  
 	• For the basis step, what would you need to show true?  
-
+	P(302) is true, P(12) is true
 	• For the inductive step, what conditional(s) would you need to show true?
+	P(u) -> P(00uu), P(s) and P(w) -> P(s11w2)
 
 
 RF5 - given relation, is it a function
@@ -24,8 +25,12 @@ For each of the following relations, determine whether or not it is a function a
 • If it’s not a function, provide a brief but compelling explanation why not.  
 
 1. The relation {(1, 1), (3, 3), (3, 4), (4, 4), (8, 1), (8, 8)}  
+	1. not a function, 3 maps to 3 and 4
 2. The relation {(a, b) ∈ A × A : a < b}, where A = {1, 3, 4, 8}  
+	1. not a function, 1 maps to 3,4 and 8
 3. The relation {(c, d) ∈ N × N : c = d + 1}
+	1. is a function
+	2. Domain: N, Image: N+1 **CHECK
 
 RF6 - 1-1, onto, 
 
