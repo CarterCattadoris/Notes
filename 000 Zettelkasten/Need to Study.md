@@ -54,7 +54,32 @@ explanation why not.
 • bijective:
 
 ![[Pasted image 20250408193259.png]]
-Claim
+Claim 2:
+Proof: by mathematical induction
+
+Basis: P(1) is true because $6^2+7=43$ is divisible by 43
+
+IS: For the IH, suppose P(k) is true:
+$6^{k+1}+7^{2k-1}$ is divisible by 43
+
+We NTS that P(k+1) is true:
+$6^{k+2} + 7^{2k+1}$ is divisible by 43
+by algebra:
+$$
+6 \cdot 6^{k+1} + 49(7^{2k-1}) = 6 \cdot 6^{k+1} + (43+6) \cdot 7^{2k-1}
+$$$$
+= 6(6^{k+1}+7^{2k-1}) + 43 \cdot 7^{2k-1}
+$$
+From the IH, we know that $6^{k+1}+7^{2k-1}$ is divisible by 43, therefore $6(6^{k+1}+7^{2k-1})$ is divisible by 43. $43 \cdot 7^{2k-1}$ is divisble by 43 by algebra, therefore the statement $6(6^{k+1}+7^{2k-1}) + 43 \cdot 7^{2k-1}$ is divisible by 43
+
+Thus the conditonal P(k) -> P(k+1) is true for all $k \geq 1$.
+By the basis, IS, and PMI
+
+
+
+
+
+
 
 
 
