@@ -30,7 +30,7 @@ For each of the following relations, determine whether or not it is a function a
 	2. not a function, 1 maps to 3,4 and 8
 3. The relation {(c, d) ∈ N × N : c = d + 1}
 	1. is a function
-	2. Domain: N, Image: N+1 **CHECK
+	2. Domain: N, Image: Z+
 
 RF6 - 1-1, onto, 
 
@@ -61,7 +61,7 @@ Proof: by mathematical induction
 P(1) is true because $(3 \cdot 1+1) = 4$, $\frac{1(3 \cdot 1 + 5)}{2} = \frac{8}{2} = 4$
 
 ### Inductive Step:
-Suppose P(k) is true:
+for the IH Suppose P(k) is true:
 $$\sum_{i=1}^{k} (3i+1) = \frac{k(3k+5)}{2}$$
 We NTS P(k+1) is true:
 $$\sum_{i=1}^{k+1} (3i+1) = \frac{(k+1)(3(k+1)+5)}{2} = \frac{k(3k+8) + 3k+8}{2} = \frac{3k^2+11k+8}{2}$$
