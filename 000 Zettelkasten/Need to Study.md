@@ -54,6 +54,10 @@ explanation why not.
 • bijective:
 
 ![[Pasted image 20250408193259.png]]
+Claim
+
+
+
 Claim 1
 
 Proof: by mathematical induction
