@@ -2,12 +2,12 @@
 
 	 1. $\{\{a, b, c\}, \{d, g\}, \{b, f, e\}, \{h\}\}$ is a partition of $\{a, b, c, d, e, f, g, h\}$.
 		 1. False, element b appears twice making it not a partition
-	12. \{1, \{3, 4\}, \{5\}, \{2\}\}$ is a partition of $\{1, 2, 3, 4, 5\}$.
-		12. alse, the element 1 is not a set therefore making it not a valid partition
-	23. \{Z+, \{−1, −2\}, \{0, −3\}, \{w ∈ Z : w < −4\}\}$ is a partition of Z.
-		13. alse, doesn't include -4 ($w <-4$ not $w \leq -4$)
-	34. \{\{2n : n ∈ N\}, \{2n + 1 : n ∈ Z+\}, \{n ∈ N : n ∈ Z−\}\}$ is a partition of Z.
-		14. alse, the third set is empty, and the remaining sets dont cover negative numbers and 1
+	12. {1, \{3, 4\}, \{5\}, \{2\}\}$ is a partition of $\{1, 2, 3, 4, 5\}$.
+		12. lse, the element 1 is not a set therefore making it not a valid partition
+	23. {Z+, \{−1, −2\}, \{0, −3\}, \{w ∈ Z : w < −4\}\}$ is a partition of Z.
+		13. lse, doesn't include -4 ($w <-4$ not $w \leq -4$)
+	34. {\{2n : n ∈ N\}, \{2n + 1 : n ∈ Z+\}, \{n ∈ N : n ∈ Z−\}\}$ is a partition of Z.
+		14. lse, the third set is empty, and the remaining sets dont cover negative numbers and 1
 
 
 2. For each of the following relations, determine whether or not it is an equivalence relation and support your answer as follows:
