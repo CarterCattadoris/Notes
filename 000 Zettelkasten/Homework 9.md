@@ -36,8 +36,23 @@ Your task: Use structural induction to prove the following claim:
 For all $s ∈ ABCs, numA(s) > numB(s)$. (That is, every element of ABCs contains  
 more a’s than b’s.)  
 
-### Basis
+Let P(s) be the statement $numA(s) > numB(s)$
+### Basis:
+P(ca) is true because $numA(ca) = 1 > 0 = numB(ca)$
+P(acab) is true because $numA(acab) = 2 > 1 = numB(acab)$
 
+### IS:
+Suppose s and t are in ABCs
+Suppose P(s) and P(t) are true: $numA(s) > numB(s)$, $numA(t) > numB(t)$
+
+We NTS that $P(bsbta)$ is true: $numA(bsbta) > numB(bsbta)$
+
+  $numA(bsbta) = 1 + numA(s) + numA(T)$ def numA
+		    $> 1+numB(s) + numB(t)$ by IH
+
+
+Thus, the conditional $P(s) \land P(t) \to P(bsbta)$ is true
+By the basis, IS, and structural induction, the claim is true
 
 5. As discussed in lecture, the set FBT of full binary trees can be defined recursively as follows:  
 • A single node is a full binary tree.  
