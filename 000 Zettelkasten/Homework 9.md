@@ -48,8 +48,9 @@ Suppose P(s) and P(t) are true: $numA(s) > numB(s)$, $numA(t) > numB(t)$
 We NTS that $P(bsbta)$ is true: $numA(bsbta) > numB(bsbta)$
 
   $numA(bsbta) = 1 + numA(s) + numA(T)$ def numA
-		    $> 1+numB(s) + numB(t)$ by IH
-
+		    $> 1+numB(s) + numA(t)$ by IH
+		    $\geq 1+numB(s) + (numB(t) + 1)$ by IH with integer facts
+		    $= 2+numB(s) + numB(t) = numB(bsbta)$
 
 Thus, the conditional $P(s) \land P(t) \to P(bsbta)$ is true
 By the basis, IS, and structural induction, the claim is true
