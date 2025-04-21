@@ -31,19 +31,6 @@ We NTS that $P(bsbta)$ is true: $numA(bsbta) > numB(bsbta)$
 Thus, the conditional $P(s) \land P(t) \to P(bsbta)$ is true
 By the basis, IS, and structural induction, the claim is true
 
-5. As discussed in lecture, the set FBT of full binary trees can be defined recursively as follows:  
-• A single node is a full binary tree.  
-• If T1 and T2 are both full binary trees, then $T1 \bowtie T2$ is a full binary tree.  
-Recall: The notation $T1 \bowtie T2$ denotes the tree obtained by creating a new root node, with T1 as its left subtree and T2 as its right subtree.  
-
-The number of edges and of nodes of a binary tree T can be calculated using the functions  edges(T) and nodes(T), defined as follows:  
-• If T is a single node, then edges(T)  = 0 and nodes(T) = 1.  
-• If T is a tree $T1 \bowtie T2$, then  
-$edges(T1 \bowtie T2) = 2 + edges(T1) + edges(T2)$ 
-$nodes(T1 \bowtie T2) = 1 + nodes(T1) + nodes(T2)$
-Your task: Use structural induction to prove the following claim:  
-For every full binary tree T , edges(T) = nodes(T ) − 1.  
-
 ## Question 5
 
 Let P(A) be the statement: For every full binary tree A, edges(A) = nodes(A) - 1
