@@ -69,9 +69,12 @@ Min Heap
 	each parent is <= its child node
 	all levels must be filled left to right to start new level
 
-
+01010100
+Abaccadabra
 [12, 4x, 15, 9, 20, 3x, 7x]
 
 3
 4 7
 9 12 15 20
+
+
