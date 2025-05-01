@@ -6,7 +6,7 @@ Let’s go step by step:
 
 ### ✅ PART 1: Derive Impulse Response Using Laplace and Inverse Laplace (sin only)
 
-#### **System 1: $ H(s) = \dfrac{1}{s^2 + 4s + 1} $**
+#### **System 1:  H(s) = \dfrac{1}{s^2 + 4s + 1} $**
 
 **Step 1: Input is impulse → $ X(s) = 1 $**
 
