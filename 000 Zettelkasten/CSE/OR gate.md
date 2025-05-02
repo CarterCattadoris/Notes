@@ -1,4 +1,4 @@
-202501231528
+o202501231528
 Status: #idea
 Tags:[[CMOS Gates]]
 

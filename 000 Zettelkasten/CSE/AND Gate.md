@@ -1,4 +1,4 @@
-la202501231526
+202501231526
 Status: #idea
 Tags:[[CMOS Gates]]
 

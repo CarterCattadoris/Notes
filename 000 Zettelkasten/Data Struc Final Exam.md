@@ -69,20 +69,3 @@ Min Heap
 	each parent is <= its child node
 	all levels must be filled left to right to start new level
 
-T,h,e, ,d,o,r,s,l,a,m
-1 1 2 2 2 2 1 1 1 1 2 
-  x     x 
-T h  r  s
- 2xe, 2xo, 2xm
-T 0000
-h 0001
-e 0010
-space 0011
-d 0100
-o 0101
-r 0110
-s 0111
-l 1000
-a 1001
-m 1010
-
