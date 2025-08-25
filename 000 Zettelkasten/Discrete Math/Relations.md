@@ -1,6 +1,6 @@
 202502131124
 Status: #idea
-Tags:[[Sets]]
+Tags:[[Sets]] 
 
 aka [[Binary Relations]]
 
