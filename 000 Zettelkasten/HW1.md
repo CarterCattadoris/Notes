@@ -14,25 +14,8 @@ Tags:[[CSE 384]]
 	1. mkdir dir.b
 	2. touch file.b
 	3. mv file.b dir.b
-8. 
-9. find A -maxdepth 2 -type f -name "\*.txt" -exec cp {} D/ \\;
-
-
-in class:
- #include <stdio.h>
-int main(void) {
-  printf("carter cattadoris");
-  return 0;
-}
-include <stdio.h>
-int main(void) {
-  int a = 1;
-  int b = 2;
-  int c = 3;
-  int d = a*b*c;
-  printf("%d", d);
-  return 0;
-}
+8. find $PWD -maxdepth 2 -type f -name "\*bash\*"
+9. find A -type f -name "\*.txt" -exec cp {} D/ \\;
 
 
 
