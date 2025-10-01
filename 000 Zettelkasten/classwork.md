@@ -1,4 +1,5 @@
 
+Exercise 1:
 
 #include <stdio.h>
 
@@ -27,5 +28,18 @@ struct hrdb {
 };
 int main(void) {
 	struct hrdb employees[2] = {{"Alice", 32, 2000}, {"Bob", 23, 1800}};
+	return 0;
+}
+
+Exercise 2:
+
+#include <stdio.h>
+
+int main(void) {
+	int x = 4;
+	int* p1 = &x;
+	int * p2 = &x;
+	*p1 = 5;
+	printf("x = %d\n", *p2);
 	return 0;
 }
