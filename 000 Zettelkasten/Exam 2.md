@@ -13,12 +13,15 @@ Tags:[[CSE 381]]
 - Mapping: **Direct-mapped (1-way)**
 
 offset = $\log_{2}{(32B)} = 5B$
+- offset = number of words/bytes per block (word/byte offset)
 
 \# blocks = $\frac{64KiB}{32B} = \frac{65536}{32} = 2048$
 
 index bits = $\log_2{(2048)} = 11$
+- index bits = number of lines in direct mapped
 
 tag bits = 32 - index bits - offset = 32 - 11 - 5 = 16
+- remaining bits 
 
 direct mapped cache mapping: Block address modulo num blocks in cache
 
