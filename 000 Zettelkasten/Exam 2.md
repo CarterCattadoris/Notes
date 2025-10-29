@@ -31,7 +31,11 @@ Miss penalty: The time required to fetch a block into a level of the memory hier
 
 Flash memory is a type of _electrically erasable programmable read-only memory_ (EEPROM).
 
+**L1 cache ONLY**
 AMAT = time for a hit + miss rate x miss penalty
+
+**L1 + L2**
+AMAT = HT1 + MR1(HT2 + MR2 * MP2)
 
 Fully associative cache: A cache structure in which a block can be placed in any location in the cache.
 
