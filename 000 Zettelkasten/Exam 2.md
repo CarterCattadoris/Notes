@@ -53,3 +53,5 @@ Compulsory miss
 capacity miss
 
 conflict miss
+
+page table size = num processors * 2^(Virtual address size - log2(page size))
