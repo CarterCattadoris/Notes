@@ -20,6 +20,8 @@ index bits = $\log_2{(2048)} = 11$
 
 tag bits = 32 - index bits - offset = 32 - 11 - 5 = 16
 
+direct mapped cache mapping: Block address modulo num blocks in cache
+
 Hit rate: The fraction of memory accesses found in a level of the memory hierarchy.
 Miss rate: The fraction of memory accesses not found in a level of the memory hierarchy.
 
@@ -29,3 +31,10 @@ Miss penalty: The time required to fetch a block into a level of the memory hier
 
 Flash memory is a type of _electrically erasable programmable read-only memory_ (EEPROM).
 
+AMAT = time for a hit + miss rate x miss penalty
+
+Fully associative cache: A cache structure in which a block can be placed in any location in the cache.
+
+Set-associative cache: A cache that has a fixed number of locations (at least two) where each block can be placed.
+
+set associative cache mapping: block number modulo number of sets in cache
