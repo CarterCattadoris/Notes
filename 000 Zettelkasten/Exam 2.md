@@ -45,3 +45,11 @@ Fully associative cache: A cache structure in which a block can be placed in any
 Set-associative cache: A cache that has a fixed number of locations (at least two) where each block can be placed.
 
 set associative cache mapping: block number modulo number of sets in cache
+
+
+**Miss Types**
+Compulsory miss
+
+capacity miss
+
+conflict miss
