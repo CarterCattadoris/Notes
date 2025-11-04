@@ -16,21 +16,32 @@ int main() {
 }
 
 ## Problem 2
-#include <unistd.h>
-#include <fcntl.h>
-
-#define BUFFER_SIZE 4096
+#include <stdio.h>
 
 int main(int argc, char \*argv[]) {
-    int fd_src, fd_dest;
-    char buffer[BUFFER_SIZE];
-    ssize_t bytes_read;
-    fd_src = open(argv[1], O_RDONLY);
-    fd_dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
-    while ((bytes_read = read(fd_src, buffer, BUFFER_SIZE)) > 0) {
-        write(fd_dest, buffer, bytes_read);
+    FILE \*src, \*dest;
+    int ch;
+    src = fopen(argv[1], "r");
+    dest = fopen(argv[2], "w");
+    while ((ch = fgetc(src)) != EOF) {
+        fputc(ch, dest);
     }
-    close(fd_src);
-    close(fd_dest);
+    fclose(src);
+    fclose(dest);
+    return 0;
+}
+
+## Problem 3
+#include <stdio.h>
+
+int main(void) {
+    FILE \*fp;
+    fp = fopen("f.txt", "w");
+    if (fp == NULL) {
+        printf("Error: f.txt does not exist\n");
+        return 1;
+    }
+    printf("File truncated successfully\n");
+    fclose(fp);
     return 0;
 }
