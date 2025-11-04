@@ -8,7 +8,7 @@ int main() {
     int fd;
     fd = open("f.txt", O_WRONLY | O_TRUNC);
     if (fd == -1) {
-        printf("Error: File f.txt does not exist or cannot be opened\n");
+        write(1, "Error: f.txt does not exist\n", 29);
         return 1;
     }
     close(fd);
@@ -42,6 +42,24 @@ int main(void) {
         return 1;
     }
     printf("File truncated successfully\n");
+    fclose(fp);
+    return 0;
+}
+
+## Problem 4
+#include <stdio.h>
+
+int main(void) {
+    FILE \*fp;
+    char buf[100];
+    fp = fopen("file1.txt", "a");
+    fclose(fp);
+    fp = fopen("file1.txt", "a");
+    fprintf(fp, "Alice\n");
+    fclose(fp);
+    fp = fopen("file1.txt", "r");
+    while (fgets(buf, sizeof(buf), fp) != NULL)
+        printf("%s", buf);
     fclose(fp);
     return 0;
 }
