@@ -63,3 +63,38 @@ int main(void) {
     fclose(fp);
     return 0;
 }
+
+## Problem 5
+#include <stdio.h>
+
+int main(int argc, char \*argv[]) {
+    FILE \*fp = fopen(argv[1], "r");
+    int x, i;
+    float num, sum = 0.0;
+    fscanf(fp, "%d", &x);
+    for (i = 0; i < x; i++) {
+        fscanf(fp, "%f", &num);
+        sum += num;
+    }
+    printf("%.2f\n", sum);
+    fclose(fp);
+    return 0;
+}
+
+## Problem 6
+#include <stdio.h>
+
+int main(void) {
+    FILE \*fp = fopen("db.txt", "r");
+    char first[50], last[50];
+    int salary, count = 0, sum = 0;
+    while (fscanf(fp, "%s %s %d", first, last, &salary) == 3) {
+        sum += salary;
+        count++;
+    }
+    printf("Average salary: %.2f\n", (float)sum / count);
+    fclose(fp);
+    return 0;
+}
+
+## Problem 7

@@ -1,4 +1,6 @@
 
+Exercise 1:
+
 #!/bin/bash
 
 file=$1
@@ -27,3 +29,9 @@ if [ $catStatus -eq 0 ] && [ $grepStatus -eq 0 ]; then
 else
         exit 1
 fi
+
+
+Exercise 2:
+ctrl+z puts it to the background, while ctrl+c terminates the process entirely
+
+fg %2 brings back f2 since it was the second process we opened in the background
