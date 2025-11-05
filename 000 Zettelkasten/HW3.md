@@ -98,3 +98,44 @@ int main(void) {
 }
 
 ## Problem 7
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    FILE \*in = fopen("input.txt", "r");
+    FILE \*out = fopen("output.txt", "w");
+    char buf[256];
+    while (fgets(buf, sizeof(buf), in)) {
+        int len = strlen(buf);
+        if (buf[len - 1] == '\n') buf[--len] = '\0';
+        for (int i = len - 1; i >= 0; i--)
+            fputc(buf[i], out);
+        fputc('\n', out);
+    }
+    fclose(in);
+    fclose(out);
+    return 0;
+}
+
+## Problem 8
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    FILE \*in = fopen("input.txt", "r");
+    char lines[100][256];
+    int count = 0;
+    while (fgets(lines[count], sizeof(lines[count]), in))
+        count++;
+    fclose(in);
+    FILE \*out = fopen("output.txt", "w");
+    for (int i = count - 1; i >= 0; i--) {
+        int len = strlen(lines[i]);
+        if (lines[i][len - 1] == '\n') lines[i][--len] = '\0';
+        for (int j = len - 1; j >= 0; j--)
+            fputc(lines[i][j], out);
+        fputc('\n', out);
+    }
+    fclose(out);
+    return 0;
+}
