@@ -37,5 +37,33 @@ number of blocks: $2^{index}$, 10 bit index = 1024 blocks
 
 ## multiple choice
 
-snoopy bus: bus based, small scale systems with centralized main memory
-false: sca
+1. snoopy bus: bus based, small scale systems with centralized main memory
+2. false: scalar uniprocessor 
+3. output data dependance
+4. superscalar
+5.  simultaneous multithreading
+6. warp
+7. 20 times
+8.  0.6 + 0.6 + 0.3 = 1.5 CPI, 53.3 MIPS = CPI/MHz
+9.  1 + 0.2(5 + 0.1 * 30) = 2.6
+10. 1000
+11. no, you would have the same AMAT more cost
+12. 1 GB (2^12 * 2^18 = 2^30 = 1 GB)
+13.  4 KiB (2^12)
+14. 9.9 (0.6 * 1.1 * 15)
+15. 2^6 = 64 per block, 2^10 1024 blocks
+16. $\frac{1}{2x10^9} * 10$ = 500ns
+
+--
+1. T or F
+	1. F
+	2. F
+	3. T
+	4. F
+	5. T
+	6. T
+	7. F
+	8. T
+	9. F
+	10. F
+2. 
