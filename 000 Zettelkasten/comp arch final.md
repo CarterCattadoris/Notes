@@ -32,4 +32,10 @@ units are in cycles
 ## cache equations
 
 cache block size: $2^{offset}$, 6 bit offset = $2^6$ = 64 bytes per block
+number of blocks: $2^{index}$, 10 bit index = 1024 blocks
 
+
+## multiple choice
+
+snoopy bus: bus based, small scale systems with centralized main memory
+false: sca
