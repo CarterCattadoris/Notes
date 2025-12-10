@@ -66,4 +66,7 @@ number of blocks: $2^{index}$, 10 bit index = 1024 blocks
 	8. T
 	9. F
 	10. F
-2. 
+2. decreases stalls when prediction is correct, make the common case fast
+3. Write through: writes to cache and main memory at the same time, used for L1 write through to L2. Write back: requires dirty bit because a cache member can be modified without the main memory. L2 penalty to main memory would be brutal with write through so write back is used
+4. increase miss rate, lower hit time.
+5. you would have faster access to data, after the ID stage instead of EX stage
