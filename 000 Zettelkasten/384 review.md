@@ -9,63 +9,63 @@ Based on the course material and professor's guidance, here are practice problem
 ### Problem 1 [5 points]
 Which system call is used to create a file with empty space (sparse file)?
 - A. `open()` with `O_CREAT` flag
-- B. `lseek()` with a large offset
+- **B**. `lseek()` with a large offset
 - C. `write()` with null bytes
 - D. `fseek()` with `SEEK_END`
 
 ### Problem 2 [5 points]
 What are the standard file descriptors? Choose all that apply.
-- A. FD 0 = stdin
-- B. FD 1 = stdout
-- C. FD 2 = stderr
+- **A. FD 0 = stdin**
+- **B. FD 1 = stdout**
+- **C. FD 2 = stderr**
 - D. FD 3 = stdlog
 
 ### Problem 3 [5 points]
 Which flag for `open()` ensures that writes always append to the end of the file atomically?
 - A. `O_TRUNC`
-- B. `O_APPEND`
+- **B. `O_APPEND`**
 - C. `SEEK_END`
 - D. `O_WRONLY`
 
 ### Problem 4 [5 points]
 What is the difference between `r+` and `w+` modes in `fopen()`?
-- A. `r+` requires file to exist, `w+` truncates or creates
+- **A**. `r+` requires file to exist, `w+` truncates or creates
 - B. `r+` is read-only, `w+` is write-only
 - C. `r+` appends, `w+` overwrites
 - D. No difference
 
 ### Problem 5 [5 points]
 Which of the following uses buffered I/O? Choose all that apply.
-- A. `read()`
+- **A**. `read()`
 - B. `fgets()`
-- C. `write()`
+- **C**. `write()`
 - D. `fprintf()`
-- E. `lseek()`
+- **E.** `lseek()`
 
 ### Problem 6 [10 points]
 **Short Answer**: Explain what happens when you create a sparse file using `lseek()` to seek 1GB past the end of an empty file, then write one byte. How does the file size differ from the actual disk space used?
 
 **Answer:**
 _______________________________________________________________________________
-
+The file size will be 1 GB but it only uses a small amount of disk space due to there being a lot of whitespace
 _______________________________________________________________________________
 
 _______________________________________________________________________________
 
 ### Problem 7 [5 points]
 What information can be retrieved using `stat()` or `fstat()`? Choose all that apply.
-- A. File size
-- B. File permissions
-- C. File type (regular, directory, socket, etc.)
+- **A. File size**
+- **B. File permissions**
+- **C. File type (regular, directory, socket, etc.)**
 - D. File contents
-- E. Owner UID/GID
+- **E. Owner UID/GID**
 
 ### Problem 8 [5 points]
 Which file types can be identified using `stat()`? Choose all that apply.
-- A. Regular file
-- B. Directory
-- C. Socket
-- D. FIFO (named pipe)
+- **A. Regular file**
+- **B. Directory**
+- **C. Socket**
+- **D. FIFO (named pipe)**
 - E. Symbolic link
 - F. Compressed file
 
@@ -83,13 +83,14 @@ fork();
 - A. 3
 - B. 4
 - C. 6
-- D. 8
+- **D. 8**
+Isnt there 15? 1 -> 2 (first fork) -> 4 (second fork) -> 8 (third fork)
 
 ### Problem 10 [5 points]
 What is the return value of `fork()` in the child process?
 - A. The child's PID
 - B. The parent's PID
-- C. 0
+- **C. 0**
 - D. -1
 
 ### Problem 11 [5 points]
@@ -97,27 +98,27 @@ What is the return value of `fork()` in the parent process?
 - A. The child's PID
 - B. The parent's PID
 - C. 0
-- D. -1
+- **D. -1**
 
 ### Problem 12 [5 points]
 Which Linux commands can be used to view running processes? Choose all that apply.
-- A. `top`
-- B. `jobs`
+- **A. `top`**
+- **B. `jobs`**
 - C. `ps`
-- D. `ps aux`
+- **D. `ps aux`**
 - E. `ls -l`
 
 ### Problem 13 [5 points]
 What does `CTRL-Z` do to a foreground process?
 - A. Kills it immediately
-- B. Suspends it and puts it in the background
+- **B. Suspends it and puts it in the background**
 - C. Sends SIGINT
 - D. Brings it to foreground
 
 ### Problem 14 [5 points]
 Which signal is sent when you press `CTRL-C`?
 - A. SIGTERM
-- B. SIGKILL
+- **B. SIGKILL**
 - C. SIGINT
 - D. SIGALRM
 
@@ -128,10 +129,12 @@ Which signal CANNOT be caught or handled by a signal handler?
 - C. SIGKILL (signal -9)
 - D. SIGALRM
 
+i dont know
+
 ### Problem 16 [5 points]
 What system call does a parent use to wait for a child process to terminate?
 - A. `fork()`
-- B. `wait()` or `waitpid()`
+- **B. `wait()` or `waitpid()`**
 - C. `exit()`
 - D. `kill()`
 
@@ -140,7 +143,7 @@ What system call does a parent use to wait for a child process to terminate?
 
 **Answer:**
 _______________________________________________________________________________
-
+It depends on the purpose of the signal handler. If it is just meant to display something when passed a signal it will do that, or it will terminate if you pass it a signal meant to kill it
 _______________________________________________________________________________
 
 _______________________________________________________________________________
@@ -149,7 +152,7 @@ _______________________________________________________________________________
 What function is used to schedule a SIGALRM signal after a specified number of seconds?
 - A. `timer()`
 - B. `alarm()`
-- C. `sleep()`
+- **C. `sleep()`**
 - D. `signal()`
 
 ### Problem 19 [10 points]
@@ -161,7 +164,7 @@ if (pid == 0) {
 }
 ```
 - A. Only the parent
-- B. Only the child
+- **B. Only the child**
 - C. Both parent and child
 - D. Neither
 
@@ -171,7 +174,7 @@ if (pid == 0) {
 
 ### Problem 20 [5 points]
 How do you silence stdout (standard output) in bash?
-- A. `command 1> /dev/null`
+- **A. `command 1> /dev/null`**
 - B. `command 2> /dev/null`
 - C. `command &> /dev/null`
 - D. `command > /dev/null`
@@ -179,7 +182,7 @@ How do you silence stdout (standard output) in bash?
 ### Problem 21 [5 points]
 How do you silence stderr (standard error) in bash?
 - A. `command 1> /dev/null`
-- B. `command 2> /dev/null`
+- **B. `command 2> /dev/null`**
 - C. `command &> /dev/null`
 - D. `command > /dev/null`
 
@@ -189,19 +192,19 @@ How do you silence both stdout and stderr in bash?
 - B. `command 2> /dev/null`
 - C. `command &> /dev/null`
 - D. `command > /dev/null 2> /dev/null`
-- E. Both C and D
+- **E. Both C and D**
 
 ### Problem 23 [5 points]
 Which bash command repeats the last command that started with "ls"?
-- A. `!ls`
+- **A. `!ls`**
 - B. `!!`
 - C. `history ls`
 - D. `repeat ls`
 
 ### Problem 24 [5 points]
 Which commands can move a background process to the foreground? Choose all that apply.
-- A. `fg`
-- B. `fg %1` (where 1 is the job number)
+- **A. `fg`**
+- **B. `fg %1` (where 1 is the job number)**
 - C. `bg`
 - D. `jobs`
 
