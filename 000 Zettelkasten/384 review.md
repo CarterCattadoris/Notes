@@ -1,438 +1,643 @@
-# CSE 384: Systems and Network Programming - Final Exam Practice Problems
+# Additional Practice Problems - Focused Review
 
-Based on the course material and professor's guidance, here are practice problems covering all topics:
+Here are additional problems targeting the concepts you missed:
 
 ---
 
-## UNIX File I/O (Unbuffered + Standard I/O)
+## Buffered vs Unbuffered I/O
 
-### Problem 1 [5 points]
-Which system call is used to create a file with empty space (sparse file)?
-- A. `open()` with `O_CREAT` flag
-- **B**. `lseek()` with a large offset
-- C. `write()` with null bytes
-- D. `fseek()` with `SEEK_END`
+### Problem 41 [5 points]
+Which of the following are unbuffered I/O system calls? Choose all that apply.
+- **A. `open()`**
+- B. `fprintf()`
+- **C. `read()`**
+- D. `fwrite()`
+- **E. `lseek()`**
+- F. `fclose()`
 
-### Problem 2 [5 points]
-What are the standard file descriptors? Choose all that apply.
-- **A. FD 0 = stdin**
-- **B. FD 1 = stdout**
-- **C. FD 2 = stderr**
-- D. FD 3 = stdlog
+### Problem 42 [5 points]
+You need to write a program that reads exactly 512 bytes from a specific offset in a file for maximum performance. Which approach should you use?
+- A. Standard I/O with fseek() and fread()
+- B. Unbuffered I/O with lseek() and read()
+- **C. Either approach works equally well**
+- D. Standard I/O is always faster
 
-### Problem 3 [5 points]
-Which flag for `open()` ensures that writes always append to the end of the file atomically?
-- A. `O_TRUNC`
-- **B. `O_APPEND`**
-- C. `SEEK_END`
-- D. `O_WRONLY`
-
-### Problem 4 [5 points]
-What is the difference between `r+` and `w+` modes in `fopen()`?
-- **A**. `r+` requires file to exist, `w+` truncates or creates
-- B. `r+` is read-only, `w+` is write-only
-- C. `r+` appends, `w+` overwrites
-- D. No difference
-
-### Problem 5 [5 points]
-Which of the following uses buffered I/O? Choose all that apply.
-- **A**. `read()`
-- B. `fgets()`
-- **C**. `write()`
-- D. `fprintf()`
-- **E.** `lseek()`
-
-### Problem 6 [10 points]
-**Short Answer**: Explain what happens when you create a sparse file using `lseek()` to seek 1GB past the end of an empty file, then write one byte. How does the file size differ from the actual disk space used?
+### Problem 43 [10 points]
+**Short Answer**: Explain why Standard I/O (buffered) is generally more efficient than unbuffered I/O for text file processing, but unbuffered I/O might be preferred for network programming.
 
 **Answer:**
 _______________________________________________________________________________
-The file size will be 1 GB but it only uses a small amount of disk space due to there being a lot of whitespace
+I don't know and that seems to be out of the scope of this class unless it is referenced specifically
 _______________________________________________________________________________
 
 _______________________________________________________________________________
 
-### Problem 7 [5 points]
-What information can be retrieved using `stat()` or `fstat()`? Choose all that apply.
-- **A. File size**
-- **B. File permissions**
-- **C. File type (regular, directory, socket, etc.)**
-- D. File contents
-- **E. Owner UID/GID**
-
-### Problem 8 [5 points]
-Which file types can be identified using `stat()`? Choose all that apply.
-- **A. Regular file**
-- **B. Directory**
-- **C. Socket**
-- **D. FIFO (named pipe)**
-- E. Symbolic link
-- F. Compressed file
+### Problem 44 [5 points]
+Which header files correspond to unbuffered vs buffered I/O?
+- **A. Unbuffered: `<unistd.h>`, Buffered: `<stdio.h>`**
+- B. Unbuffered: `<stdio.h>`, Buffered: `<unistd.h>`
+- C. Both use `<stdio.h>`
+- D. Both use `<unistd.h>`
 
 ---
 
-## Processes, Signals, Fork, Wait
+## Fork Return Values and Process Counting
 
-### Problem 9 [10 points]
-**Code Analysis**: How many total processes are created by the following code (including the original parent)?
+### Problem 45 [10 points]
+**Code Analysis**: What will this code print and how many times?
 ```c
-fork();
-fork();
+int x = 10;
+pid_t pid = fork();
+
+if (pid > 0) {
+    x = 20;
+    printf("A: x = %d\n", x);
+} else if (pid == 0) {
+    x = 30;
+    printf("B: x = %d\n", x);
+} else {
+    printf("Fork failed\n");
+}
+```
+- **A. "A: x = 20" once, "B: x = 30" once**
+- B. "A: x = 20" twice
+- C. "B: x = 30" twice
+- D. "A: x = 20" once, "B: x = 20" once
+
+### Problem 46 [10 points]
+How many processes are created by this code (including the original)?
+```c
+if (fork() == 0) {
+    fork();
+}
 fork();
 ```
-- A. 3
-- B. 4
-- C. 6
-- **D. 8**
-Isnt there 15? 1 -> 2 (first fork) -> 4 (second fork) -> 8 (third fork)
+- A. 4
+- B. 5
+- **C. 6**
+- D. 8
 
-### Problem 10 [5 points]
-What is the return value of `fork()` in the child process?
-- A. The child's PID
-- B. The parent's PID
-- **C. 0**
-- D. -1
-
-### Problem 11 [5 points]
-What is the return value of `fork()` in the parent process?
-- A. The child's PID
-- B. The parent's PID
-- C. 0
-- **D. -1**
-
-### Problem 12 [5 points]
-Which Linux commands can be used to view running processes? Choose all that apply.
-- **A. `top`**
-- **B. `jobs`**
-- C. `ps`
-- **D. `ps aux`**
-- E. `ls -l`
-
-### Problem 13 [5 points]
-What does `CTRL-Z` do to a foreground process?
-- A. Kills it immediately
-- **B. Suspends it and puts it in the background**
-- C. Sends SIGINT
-- D. Brings it to foreground
-
-### Problem 14 [5 points]
-Which signal is sent when you press `CTRL-C`?
-- A. SIGTERM
-- **B. SIGKILL**
-- C. SIGINT
-- D. SIGALRM
-
-### Problem 15 [5 points]
-Which signal CANNOT be caught or handled by a signal handler?
-- A. SIGINT
-- B. SIGTERM
-- C. SIGKILL (signal -9)
-- D. SIGALRM
-
-i dont know
-
-### Problem 16 [5 points]
-What system call does a parent use to wait for a child process to terminate?
-- A. `fork()`
-- **B. `wait()` or `waitpid()`**
-- C. `exit()`
-- D. `kill()`
-
-### Problem 17 [10 points]
-**Short Answer**: Explain what happens after a signal handler function executes. Does the program terminate or continue execution? Under what circumstances would it terminate?
-
-**Answer:**
-_______________________________________________________________________________
-It depends on the purpose of the signal handler. If it is just meant to display something when passed a signal it will do that, or it will terminate if you pass it a signal meant to kill it
-_______________________________________________________________________________
-
-_______________________________________________________________________________
-
-### Problem 18 [5 points]
-What function is used to schedule a SIGALRM signal after a specified number of seconds?
-- A. `timer()`
-- B. `alarm()`
-- **C. `sleep()`**
-- D. `signal()`
-
-### Problem 19 [10 points]
-**Code Analysis**: Given the following code, which processes will print "Hello"?
+### Problem 47 [15 points]
+**Code Tracing**: Draw the process tree and determine how many times "Hello" is printed:
 ```c
-pid_t pid = fork();
-if (pid == 0) {
+fork();
+if (fork() == 0) {
     printf("Hello\n");
 }
 ```
-- A. Only the parent
-- **B. Only the child**
-- C. Both parent and child
-- D. Neither
 
----
+**Answer:**
+```
+Process tree:
+ignored on purpose
 
-## Bash Programming & Process Management
+Total "Hello" prints: _____
+```
 
-### Problem 20 [5 points]
-How do you silence stdout (standard output) in bash?
-- **A. `command 1> /dev/null`**
-- B. `command 2> /dev/null`
-- C. `command &> /dev/null`
-- D. `command > /dev/null`
+### Problem 48 [10 points]
+What is the purpose of checking the return value of fork()?
+```c
+pid_t pid = fork();
+if (pid < 0) {
+    // Why do we check this?
+}
+```
+- **A. To detect if fork() failed**
+- B. To identify the child process
+- C. To identify the parent process
+- D. To count how many processes were created
 
-### Problem 21 [5 points]
-How do you silence stderr (standard error) in bash?
-- A. `command 1> /dev/null`
-- **B. `command 2> /dev/null`**
-- C. `command &> /dev/null`
-- D. `command > /dev/null`
-
-### Problem 22 [5 points]
-How do you silence both stdout and stderr in bash?
-- A. `command 1> /dev/null`
-- B. `command 2> /dev/null`
-- C. `command &> /dev/null`
-- D. `command > /dev/null 2> /dev/null`
-- **E. Both C and D**
-
-### Problem 23 [5 points]
-Which bash command repeats the last command that started with "ls"?
-- **A. `!ls`**
-- B. `!!`
-- C. `history ls`
-- D. `repeat ls`
-
-### Problem 24 [5 points]
-Which commands can move a background process to the foreground? Choose all that apply.
-- **A. `fg`**
-- **B. `fg %1` (where 1 is the job number)**
-- C. `bg`
-- D. `jobs`
-
----
-
-## Networking & Sockets
-
-### Problem 25 [5 points]
-What file I/O can be used to interact with socket descriptors?
-- A. Basic file I/O (read, write, close)
-- B. Streaming I/O
-- C. Standard I/O (fopen, fread, fwrite)
-- D. Formatted I/O
-i dont know
-### Problem 26 [5 points]
-What is stored in `struct sockaddr_in`? Choose all that apply.
-- **A. IP address**
-- B. A FILE pointer
-- **C. Port number**
-- D. URL
-
-### Problem 27 [5 points]
-What functions does a server call to create a listen socket? Choose all that apply.
-- **A. `socket()`**
-- B. `bind()`
-- C. `connect()`
-- **D. `accept()`**
-- **E. `listen()`**
-
-### Problem 28 [5 points]
-What functions does a client call to create a socket and connect to a server? Choose all that apply.
-- **A. `socket()`**
-- **B. `bind()**`**
-- **C. `connect()`**
-- D. `accept()`
-- E. `listen()`
-
-### Problem 29 [5 points]
-Which of the following functions can be blocking? Choose all that apply.
-- A. `socket()`
-- **B. `bind()`**
-- **C. `connect()`**
-- **D. `accept()`**
-- **E. `listen()`**
-- **F. `read()`**
-
-### Problem 30 [5 points]
-What is the behavior of `write()` on a socket?
-- **A. Blocking**
-- B. Non-blocking
-- C. Depends on socket flags
-- D. Always fails
-
-### Problem 31 [5 points]
-What is the behavior of `read()` on a socket?
-- **A. Blocking (waits for data)**
-- B. Non-blocking
-- C. Depends on socket flags
-- D. Always fails
-
-### Problem 32 [5 points]
-Which functions convert between host and network byte order? Choose all that apply.
-- **A. `htons()`**
-- **B. `htonl()`**
-- **C. `ntohs()`**
-- **D. `ntohl()`**
-
-### Problem 33 [5 points]
-What does `htons()` do?
-- **A. Host to Network Short (16-bit)**
-- B. Host to Network Long (32-bit)
-- C. Network to Host Short
-- D. Network to Host Long
-
-### Problem 34 [5 points]
-Which DNS lookup function converts a hostname (like "www.google.com") to an IP address?
-- **A. `gethostbyname()`**
-- B. `gethostbyaddr()`
-- C. `inet_aton()`
-- D. `inet_ntoa()`
-
-### Problem 35 [5 points]
-Which function converts an IP address string (like "192.168.1.1") to binary network format?
-- **A. `inet_aton()`**
-- B. `inet_ntoa()`
-- C. `gethostbyname()`
-- D. `gethostbyaddr()`
-
-### Problem 36 [10 points]
-**Short Answer**: In a multiprocess server, explain the role of the parent process versus the child processes. What does the parent do after forking? What does the child do?
+### Problem 49 [15 points]
+**Short Answer**: In the following code, what value of `pid` does the parent see, and what value does the child see? If the child's actual PID is 5432, explain what gets printed by each process.
+```c
+pid_t pid = fork();
+printf("pid = %d, my PID = %d\n", pid, getpid());
+```
 
 **Answer:**
 _______________________________________________________________________________
-i dont know
+skipped
 _______________________________________________________________________________
 
 _______________________________________________________________________________
-
-### Problem 37 [10 points]
-**Code Analysis**: Put the following server socket operations in the correct order:
-1. `bind()`
-2. `accept()`
-3. `socket()`
-4. `listen()`
-
-**Answer:** ____________________ socket, accept, bind, listen
-
-### Problem 38 [10 points]
-**Code Analysis**: Put the following client socket operations in the correct order:
-1. `connect()`
-2. `socket()`
-3. `read()`/`write()`
-
-**Answer:** ____________________socket, connect , read/write
 
 ---
 
-## Advanced Scenarios
+## Signals (SIGINT, SIGKILL, SIGALRM)
 
-### Problem 39 [15 points]
-**Code Tracing**: Trace through the following code and determine what will be printed:
+### Problem 50 [5 points]
+Which signal is sent by the command `kill -9 1234`?
+- A. SIGINT
+- B. SIGTERM
+- **C. SIGKILL**
+- D. SIGALRM
+
+### Problem 51 [5 points]
+A program has installed a handler for SIGINT. What happens when the user presses CTRL-C?
+- A. The program terminates immediately
+- B. The signal handler runs, then program continues
+- C. The signal is ignored
+- **D. The program terminates after the handler runs**
+
+### Problem 52 [10 points]
+**Code Analysis**: What happens when this program runs for 3 seconds?
+```c
+void handler(int sig) {
+    printf("Alarm!\n");
+}
+
+int main() {
+    signal(SIGALRM, handler);
+    alarm(3);
+    
+    while (1) {
+        printf("Working...\n");
+        sleep(1);
+    }
+}
+```
+- A. Program terminates after 3 seconds
+- **B. "Alarm!" prints after 3 seconds, program continues**
+- C. "Alarm!" prints after 3 seconds, program terminates
+- D. Program runs forever without "Alarm!" printing
+
+### Problem 53 [10 points]
+Why can't SIGKILL be caught by a signal handler?
+- A. It's a kernel limitation
+- **B. By design, to ensure processes can always be killed**
+- C. It's too fast to catch
+- D. It requires root privileges
+
+### Problem 54 [15 points]
+**Code Writing**: Write the signal handler and setup code for a program that counts how many times the user presses CTRL-C, and only exits after 3 presses.
+
+**Answer:**
+```c
+// Your code here:
+
+void handler(int sig) {
+	im confused
+}
+```
+
+### Problem 55 [10 points]
+What's the difference between these two signals?
+```c
+kill(pid, SIGTERM);  // Signal A
+kill(pid, SIGKILL);  // Signal B
+```
+- **A. SIGTERM can be caught, SIGKILL cannot**
+- B. SIGKILL can be caught, SIGTERM cannot
+- C. Both can be caught
+- D. Neither can be caught
+
+### Problem 56 [10 points]
+**Short Answer**: Explain the difference between `alarm()` and `sleep()`. When would you use each?
+
+**Answer:**
+_______________________________________________________________________________
+
+_______________________________________________________________________________
+
+_______________________________________________________________________________
+
+---
+
+## Socket Programming (Blocking, Order, Client vs Server)
+
+### Problem 57 [5 points]
+Why doesn't the client call `bind()`?
+- A. Clients don't need specific ports
+- B. The OS automatically assigns a port to the client
+- C. bind() is only for servers
+- D. All of the above
+
+### Problem 58 [10 points]
+**Code Analysis**: What's wrong with this server code?
+```c
+int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+listen(sockfd, 5);
+bind(sockfd, (struct sockaddr*)&addr, sizeof(addr));
+int conn = accept(sockfd, NULL, NULL);
+```
+- A. listen() should come after accept()
+- B. bind() should come before listen()
+- C. socket() parameters are wrong
+- D. accept() parameters are wrong
+
+### Problem 59 [5 points]
+What happens when `accept()` is called and no clients are trying to connect?
+- A. Returns immediately with -1
+- B. Returns immediately with 0
+- C. Blocks (waits) until a client connects
+- D. Raises SIGINT
+
+### Problem 60 [10 points]
+**Short Answer**: You call `write()` on a socket to send 1MB of data. The function returns immediately. Does this mean the data has been received by the remote computer? Explain.
+
+**Answer:**
+_______________________________________________________________________________
+
+_______________________________________________________________________________
+
+_______________________________________________________________________________
+
+### Problem 61 [15 points]
+**Code Ordering**: Fix the order of operations in this server code:
+```c
+// Current (wrong) order:
+int conn_fd = accept(listen_fd, NULL, NULL);
+int listen_fd = socket(AF_INET, SOCK_STREAM, 0);
+listen(listen_fd, 5);
+bind(listen_fd, (struct sockaddr*)&addr, sizeof(addr));
+```
+
+**Correct order:**
+```c
+// Line 1:
+
+// Line 2:
+
+// Line 3:
+
+// Line 4:
+```
+
+### Problem 62 [10 points]
+Which of these operations typically takes the longest time to complete?
+- A. `socket()`
+- B. `bind()`
+- C. `listen()`
+- D. `accept()`
+
+### Problem 63 [15 points]
+**Scenario**: You're writing a chat server that must handle 100 simultaneous clients. Compare these two approaches:
+
+**Approach A**: Single process server (one accept loop)
+**Approach B**: Multiprocess server (fork for each client)
+
+Which is better and why?
+
+**Answer:**
+_______________________________________________________________________________
+
+_______________________________________________________________________________
+
+_______________________________________________________________________________
+
+### Problem 64 [10 points]
+In a multiprocess server, why does the parent close `conn_fd` and the child close `listen_fd`?
+```c
+int conn_fd = accept(listen_fd, ...);
+if (fork() == 0) {
+    close(listen_fd);  // Why?
+    // handle client
+} else {
+    close(conn_fd);    // Why?
+}
+```
+
+**Answer:**
+_______________________________________________________________________________
+
+_______________________________________________________________________________
+
+### Problem 65 [5 points]
+What must you do to port numbers before using them in network code?
+- A. Convert to network byte order with htons()
+- B. Convert to host byte order with ntohs()
+- C. Add 1000 to them
+- D. Nothing, they work as-is
+
+### Problem 66 [10 points]
+**True or False with Explanation**: 
+
+"In a multiprocess server, if the parent process terminates, all child processes automatically terminate too."
+
+**Answer:** _______________
+
+**Explanation:**
+_______________________________________________________________________________
+
+_______________________________________________________________________________
+
+---
+
+## Mixed Concepts
+
+### Problem 67 [15 points]
+**Comprehensive Scenario**: You're building a multiprocess web server. For each client connection, you fork a child process. The child needs to handle the request and potentially write to a log file. 
+
+Answer these questions:
+1. Should the log file use buffered or unbuffered I/O? Why?
+2. What happens if a child process crashes? Does it affect other clients?
+3. What signal should you catch to implement graceful shutdown?
+
+**Answers:**
+
+1. _______________________________________________________________________________
+
+2. _______________________________________________________________________________
+
+3. _______________________________________________________________________________
+
+### Problem 68 [15 points]
+**Code Analysis**: Find and explain ALL the bugs in this code:
 ```c
 int main() {
-    pid_t pid1, pid2;
+    int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     
-    pid1 = fork();
-    if (pid1 == 0) {
-        printf("Child1\n");
-        exit(0);
+    struct sockaddr_in addr;
+    addr.sin_family = AF_INET;
+    addr.sin_port = 8080;  // Bug 1?
+    addr.sin_addr.s_addr = INADDR_ANY;
+    
+    bind(sockfd, (struct sockaddr*)&addr, sizeof(addr));
+    accept(sockfd, NULL, NULL);  // Bug 2?
+    
+    char buffer[100];
+    read(sockfd, buffer, 100);  // Bug 3?
+    printf("%s\n", buffer);
+}
+```
+
+**Bugs found:**
+
+1. _______________________________________________________________________________
+
+2. _______________________________________________________________________________
+
+3. _______________________________________________________________________________
+
+### Problem 69 [10 points]
+**Code Completion**: Fill in the blanks to create a proper signal handler for SIGALRM:
+```c
+void alarm_handler(int sig) {
+    printf("Time's up!\n");
+    _____________;  // What should go here to terminate?
+}
+
+int main() {
+    _____________(SIGALRM, alarm_handler);  // Install handler
+    _____________(5);  // Set 5 second alarm
+    
+    while(1) {
+        // Do work
+    }
+}
+```
+
+### Problem 70 [20 points]
+**Comprehensive Problem**: Write a complete multiprocess server that:
+1. Listens on port 9000
+2. For each client, forks a child
+3. Child reads a number from client, doubles it, sends it back
+4. Parent catches SIGINT (CTRL-C) to shutdown gracefully
+
+**Skeleton provided - fill in the blanks:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <signal.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+
+volatile int keep_running = 1;
+
+void sigint_handler(int sig) {
+    keep_running = 0;
+}
+
+int main() {
+    // 1. Create socket
+    int listen_fd = ______________________________________________;
+    
+    // 2. Setup address
+    struct sockaddr_in addr;
+    memset(&addr, 0, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_port = ______________;  // Port 9000
+    addr.sin_addr.s_addr = INADDR_ANY;
+    
+    // 3. Bind
+    ______________________________________________;
+    
+    // 4. Listen
+    ______________________________________________;
+    
+    // 5. Install signal handler
+    signal(_____________, sigint_handler);
+    
+    printf("Server listening on port 9000...\n");
+    
+    while (keep_running) {
+        // 6. Accept client
+        int conn_fd = ______________________________________________;
+        if (conn_fd < 0) continue;
+        
+        // 7. Fork child
+        pid_t pid = fork();
+        if (pid == 0) {
+            // CHILD
+            close(_____________);  // Don't need this
+            
+            int num;
+            read(conn_fd, &num, sizeof(num));
+            num = num * 2;
+            write(conn_fd, &num, sizeof(num));
+            
+            close(conn_fd);
+            exit(0);
+        } else {
+            // PARENT
+            close(_____________);  // Don't need this
+        }
     }
     
-    pid2 = fork();
-    if (pid2 == 0) {
-        printf("Child2\n");
-        exit(0);
-    }
-    
-    printf("Parent\n");
-    wait(NULL);
-    wait(NULL);
+    printf("Server shutting down...\n");
+    close(listen_fd);
     return 0;
 }
 ```
 
-**Question**: How many times total will something be printed? What are all the possible outputs?
+---
 
-**Answer:**
-_______________________________________________________________________________
-5 prints, the children created by the forks will all be exited after printing child1 or child2, and then the parent will print out parent
-_______________________________________________________________________________
+## Answer Key for Additional Problems
 
-_______________________________________________________________________________
+### Buffered vs Unbuffered I/O
+- **41:** A, C, E
+- **42:** B
+- **43:** Standard I/O buffers multiple small operations into fewer system calls, reducing overhead for text processing. Unbuffered I/O gives precise control over when data is sent/received, which is crucial for network protocols and real-time communication.
+- **44:** A
 
-_______________________________________________________________________________
+### Fork Return Values
+- **45:** A (parent prints x=20, child prints x=30)
+- **46:** C (6 processes total)
+- **47:** 2 "Hello" prints
+- **48:** A
+- **49:** Parent sees 5432 (child's PID), child sees 0. Parent prints "pid = 5432, my PID = [parent's PID]", child prints "pid = 0, my PID = 5432"
 
-### Problem 40 [15 points]
-**Scenario**: You need to write a program that:
-1. Opens a file for reading and writing
-2. If the file doesn't exist, creates it
-3. If the file exists, doesn't truncate it
-4. Allows both reading and writing
+### Signals
+- **50:** C
+- **51:** B
+- **52:** B
+- **53:** B
+- **54:** See detailed solution below
+- **55:** A
+- **56:** alarm() schedules a future signal without blocking; sleep() blocks execution. Use alarm() for timeouts while doing work, sleep() to deliberately pause.
 
-Which `fopen()` mode string should you use?
-- A. `r+`
-- B. `w+`
-- **C. `a+`**
-- D. `r`
-- E. None of the above will work
+### Socket Programming
+- **57:** D
+- **58:** B
+- **59:** C
+- **60:** No, it only means data was copied to kernel's send buffer, not yet transmitted or received
+- **61:** socket() → bind() → listen() → accept()
+- **62:** D (accept blocks waiting for clients)
+- **63:** Approach B is better - allows simultaneous handling of clients
+- **64:** Each process should close descriptors it doesn't use to avoid resource leaks
+- **65:** A
+- **66:** False - child processes continue running (become orphans, adopted by init)
 
-**Explain your answer:**
-_______________________________________________________________________________
-a+ will create a file, but not truncate a file if it already exists (it appends). a+ also sets it up for reading and writing  
-_______________________________________________________________________________
-
-_______________________________________________________________________________
+### Mixed Concepts
+- **67:** (1) Unbuffered for immediate writes and avoiding buffer issues with multiple processes (2) Other children unaffected - processes are isolated (3) SIGINT for graceful shutdown
+- **68:** (1) Need htons(8080) (2) Need listen() before accept() (3) Using wrong file descriptor - should use return value from accept()
+- **69:** exit(0); signal; alarm
+- **70:** See detailed solution below
 
 ---
 
-## Answer Key
+## Detailed Solutions for Complex Problems
 
-### Multiple Choice Answers
+### Problem 54 - SIGINT Counter
+```c
+#include <stdio.h>
+#include <signal.h>
+#include <stdlib.h>
 
-| Problem | Answer(s) | Problem | Answer(s) | Problem | Answer(s) |
-|---------|-----------|---------|-----------|---------|-----------|
-| 1       | B         | 15      | C         | 29      | C,D,F     |
-| 2       | A,B,C     | 16      | B         | 30      | B         |
-| 3       | B         | 18      | B         | 31      | A         |
-| 4       | A         | 19      | B         | 32      | A,B,C,D   |
-| 5       | B,D       | 20      | A,D       | 33      | A         |
-| 7       | A,B,C,E   | 21      | B         | 34      | A         |
-| 8       | A,B,C,D,E | 22      | E         | 35      | A         |
-| 9       | D         | 23      | A         | 37      | 3,1,4,2   |
-| 10      | C         | 24      | A,B       | 38      | 2,1,3     |
-| 11      | A         | 25      | A         | 40      | C         |
-| 12      | A,B,C,D   | 26      | A,C       |         |           |
-| 13      | B         | 27      | A,B,D,E   |         |           |
-| 14      | C         | 28      | A,C       |         |           |
+volatile int count = 0;
 
-### Short Answer Guidance
+void sigint_handler(int sig) {
+    count++;
+    printf("CTRL-C pressed %d time(s)\n", count);
+    
+    if (count >= 3) {
+        printf("Exiting after 3 presses\n");
+        exit(0);
+    }
+}
 
-**Problem 6**: The file will show a size of 1GB + 1 byte using `ls -l`, but `du` (disk usage) will show it only uses one block (typically 4KB) on disk. The space in between is "holes" that aren't actually allocated. `cat` will skip these holes, making it appear the file is only 1 byte.
+int main() {
+    signal(SIGINT, sigint_handler);
+    
+    printf("Press CTRL-C three times to exit\n");
+    
+    while(1) {
+        // Do work
+    }
+    
+    return 0;
+}
+```
 
-**Problem 17**: After a signal handler executes, it returns control to the program, which continues from where it was interrupted. The program only terminates if: (1) the handler explicitly calls `exit()`, (2) the handler doesn't catch the signal and the default action is termination, or (3) the signal is SIGKILL which cannot be caught.
+### Problem 70 - Complete Server Solution
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <signal.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 
-**Problem 36**: In a multiprocess server, the **parent process** runs an infinite loop calling `accept()` to wait for new client connections. When a client connects, the parent calls `fork()` to create a child, then immediately returns to `accept()` to wait for the next client. The **child process** handles all communication with the connected client (reading requests, processing, sending responses), then exits when done. This allows multiple clients to be served simultaneously.
+volatile int keep_running = 1;
 
-**Problem 39**: Three things will be printed total. The outputs are:
-- "Child1" (from first child)
-- "Child2" (from second child)  
-- "Parent" (from original parent)
+void sigint_handler(int sig) {
+    keep_running = 0;
+}
 
-Order may vary due to process scheduling, but all three will appear exactly once.
-
-**Problem 40**: Answer is **C** (`a+`). The `a+` mode opens for reading and appending. It creates the file if it doesn't exist, doesn't truncate if it does exist, and allows both reading and writing. The file pointer starts at the end for writing, but can be repositioned for reading.
+int main() {
+    // 1. Create socket
+    int listen_fd = socket(AF_INET, SOCK_STREAM, 0);
+    
+    // 2. Setup address
+    struct sockaddr_in addr;
+    memset(&addr, 0, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(9000);  // Port 9000
+    addr.sin_addr.s_addr = INADDR_ANY;
+    
+    // 3. Bind
+    bind(listen_fd, (struct sockaddr*)&addr, sizeof(addr));
+    
+    // 4. Listen
+    listen(listen_fd, 5);
+    
+    // 5. Install signal handler
+    signal(SIGINT, sigint_handler);
+    
+    printf("Server listening on port 9000...\n");
+    
+    while (keep_running) {
+        // 6. Accept client
+        int conn_fd = accept(listen_fd, NULL, NULL);
+        if (conn_fd < 0) continue;
+        
+        // 7. Fork child
+        pid_t pid = fork();
+        if (pid == 0) {
+            // CHILD
+            close(listen_fd);  // Don't need listening socket
+            
+            int num;
+            read(conn_fd, &num, sizeof(num));
+            num = num * 2;
+            write(conn_fd, &num, sizeof(num));
+            
+            close(conn_fd);
+            exit(0);
+        } else {
+            // PARENT
+            close(conn_fd);  // Don't need connection socket
+        }
+    }
+    
+    printf("Server shutting down...\n");
+    close(listen_fd);
+    return 0;
+}
+```
 
 ---
 
-## Study Tips
+## Study Tips for These Topics
 
-1. **Practice drawing fork trees** to visualize process creation
-2. **Trace through code by hand** - especially fork, signal handlers, and socket sequences
-3. **Know the difference** between unbuffered (system calls) and buffered (standard I/O)
-4. **Memorize standard file descriptors**: 0=stdin, 1=stdout, 2=stderr
-5. **Remember socket sequences**: 
-   - Server: socket → bind → listen → accept
-   - Client: socket → connect
-6. **Understand blocking vs non-blocking**: `read()` blocks, `write()` doesn't
-7. **Practice byte order conversions**: Always convert to network byte order before sending
-8. **Review homework problems** - similar format to exam questions
+### Buffered vs Unbuffered I/O
+- **Key distinction**: 'f' prefix functions (fopen, fgets, fprintf) = buffered
+- **Remember**: Unbuffered = direct system calls, Buffered = library wrapper
+- **Practice**: Identify which header file each function needs
 
-**Good luck on your final exam!**
+### Fork Return Values
+- **Memorize**: Parent gets child PID, child gets 0, error gets -1
+- **Draw it out**: Always draw process trees for fork problems
+- **Formula**: n sequential forks = 2^n processes
+
+### Signals
+- **Know the big 3**: SIGINT (Ctrl-C, catchable), SIGKILL (force kill, uncatchable), SIGALRM (alarm timer)
+- **Handler behavior**: Returns to program unless it calls exit()
+- **Common mistake**: Confusing alarm() (sets timer) with sleep() (blocks)
+
+### Socket Programming
+- **Server sequence**: socket → bind → listen → accept (S-B-L-A)
+- **Client sequence**: socket → connect (S-C)
+- **Remember**: Clients don't bind, servers must bind
+- **Blocking**: accept() and read() block, write() doesn't
+
+### Multiprocess Servers
+- **Parent role**: Accept loop only
+- **Child role**: Handle one client, then exit
+- **Resource management**: Always close unused file descriptors
+
+Good luck with your continued studying! These problems should help reinforce the concepts you missed.
