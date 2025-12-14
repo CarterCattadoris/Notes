@@ -218,77 +218,77 @@ What file I/O can be used to interact with socket descriptors?
 - B. Streaming I/O
 - C. Standard I/O (fopen, fread, fwrite)
 - D. Formatted I/O
-
+i dont know
 ### Problem 26 [5 points]
 What is stored in `struct sockaddr_in`? Choose all that apply.
-- A. IP address
+- **A. IP address**
 - B. A FILE pointer
-- C. Port number
+- **C. Port number**
 - D. URL
 
 ### Problem 27 [5 points]
 What functions does a server call to create a listen socket? Choose all that apply.
-- A. `socket()`
+- **A. `socket()`**
 - B. `bind()`
 - C. `connect()`
-- D. `accept()`
-- E. `listen()`
+- **D. `accept()`**
+- **E. `listen()`**
 
 ### Problem 28 [5 points]
 What functions does a client call to create a socket and connect to a server? Choose all that apply.
-- A. `socket()`
-- B. `bind()`
-- C. `connect()`
+- **A. `socket()`**
+- **B. `bind()**`**
+- **C. `connect()`**
 - D. `accept()`
 - E. `listen()`
 
 ### Problem 29 [5 points]
 Which of the following functions can be blocking? Choose all that apply.
 - A. `socket()`
-- B. `bind()`
-- C. `connect()`
-- D. `accept()`
-- E. `listen()`
-- F. `read()`
+- **B. `bind()`**
+- **C. `connect()`**
+- **D. `accept()`**
+- **E. `listen()`**
+- **F. `read()`**
 
 ### Problem 30 [5 points]
 What is the behavior of `write()` on a socket?
-- A. Blocking
+- **A. Blocking**
 - B. Non-blocking
 - C. Depends on socket flags
 - D. Always fails
 
 ### Problem 31 [5 points]
 What is the behavior of `read()` on a socket?
-- A. Blocking (waits for data)
+- **A. Blocking (waits for data)**
 - B. Non-blocking
 - C. Depends on socket flags
 - D. Always fails
 
 ### Problem 32 [5 points]
 Which functions convert between host and network byte order? Choose all that apply.
-- A. `htons()`
-- B. `htonl()`
-- C. `ntohs()`
-- D. `ntohl()`
+- **A. `htons()`**
+- **B. `htonl()`**
+- **C. `ntohs()`**
+- **D. `ntohl()`**
 
 ### Problem 33 [5 points]
 What does `htons()` do?
-- A. Host to Network Short (16-bit)
+- **A. Host to Network Short (16-bit)**
 - B. Host to Network Long (32-bit)
 - C. Network to Host Short
 - D. Network to Host Long
 
 ### Problem 34 [5 points]
 Which DNS lookup function converts a hostname (like "www.google.com") to an IP address?
-- A. `gethostbyname()`
+- **A. `gethostbyname()`**
 - B. `gethostbyaddr()`
 - C. `inet_aton()`
 - D. `inet_ntoa()`
 
 ### Problem 35 [5 points]
 Which function converts an IP address string (like "192.168.1.1") to binary network format?
-- A. `inet_aton()`
+- **A. `inet_aton()`**
 - B. `inet_ntoa()`
 - C. `gethostbyname()`
 - D. `gethostbyaddr()`
@@ -298,7 +298,7 @@ Which function converts an IP address string (like "192.168.1.1") to binary netw
 
 **Answer:**
 _______________________________________________________________________________
-
+i dont know
 _______________________________________________________________________________
 
 _______________________________________________________________________________
@@ -310,7 +310,7 @@ _______________________________________________________________________________
 3. `socket()`
 4. `listen()`
 
-**Answer:** ____________________
+**Answer:** ____________________ socket, accept, bind, listen
 
 ### Problem 38 [10 points]
 **Code Analysis**: Put the following client socket operations in the correct order:
@@ -318,7 +318,7 @@ _______________________________________________________________________________
 2. `socket()`
 3. `read()`/`write()`
 
-**Answer:** ____________________
+**Answer:** ____________________socket, connect , read/write
 
 ---
 
@@ -353,7 +353,7 @@ int main() {
 
 **Answer:**
 _______________________________________________________________________________
-
+5 prints, the children created by the forks will all be exited after printing child1 or child2, and then the parent will print out parent
 _______________________________________________________________________________
 
 _______________________________________________________________________________
@@ -370,13 +370,13 @@ _______________________________________________________________________________
 Which `fopen()` mode string should you use?
 - A. `r+`
 - B. `w+`
-- C. `a+`
+- **C. `a+`**
 - D. `r`
 - E. None of the above will work
 
 **Explain your answer:**
 _______________________________________________________________________________
-
+a+ will create a file, but not truncate a file if it already exists (it appends). a+ also sets it up for reading and writing  
 _______________________________________________________________________________
 
 _______________________________________________________________________________
