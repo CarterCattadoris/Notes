@@ -1,0 +1,1 @@
+In CMOS logical enffort analysis, the logical effort of
