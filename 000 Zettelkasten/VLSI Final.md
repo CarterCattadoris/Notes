@@ -1,6 +1,6 @@
 Previous T/F questions
 
-In CMOS logical enffort analysis, the logical effort of a gate quantifies how much worse the gate is at producing output current compared to a reference inverter, assuming input capacitance: True
+In CMOS logical effort analysis, the logical effort of a gate quantifies how much worse the gate is at producing output current compared to a reference inverter, assuming input capacitance: True
 
 Flip flops are edge triggered storage elements that capture input data only on a specific clock transition, reducing transparency issues found in latches but increasing sensitivity: True
 
