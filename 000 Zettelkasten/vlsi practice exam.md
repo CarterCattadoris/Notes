@@ -44,13 +44,13 @@ TRUE
 
 **11.** What is the logical effort (g) of a 2-input NAND gate?
 - A) 1
-- B) 4/3
+- **B) 4/3**
 - C) 5/3
 - D) 2
 
 **12.** In the timing constraint for flip-flops with clock skew, the setup time constraint is:
 - A) T_c ≥ t_pd + (t_pcq + t_setup - t_skew)
-- B) T_c ≥ t_pd + (t_pcq + t_setup + t_skew)
+- **B) T_c ≥ t_pd + (t_pcq + t_setup + t_skew)**
 - C) t_cd ≥ t_hold - t_ccq + t_skew
 - D) t_cd ≥ t_hold + t_ccq - t_skew
 
