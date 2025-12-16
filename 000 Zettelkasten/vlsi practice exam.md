@@ -200,15 +200,19 @@ Consider a synchronous circuit with the following parameters:
 - Combinational logic: t_pd = 3.8 ns, t_cd = 1.2 ns
 
 **a)** Verify that the setup time constraint is satisfied. Show your calculation.
-T_c >= t_skew + t_setup+t_pcq + t_pd
-5 > 4.7, satisfied
+T_c >= -t_skew + t_setup+t_pcq + t_pd
+5 > 4.1, satisfied
 
 **b)** Verify that the hold time constraint is satisfied. Show your calculation.
-hold >= -t_skew + t_ccq + t_cd
+t_ccq + t_cd >= t_hold + t_skew
+0.25 + 1.2 >= 0.15 + 0.3
+not >=, constraint is not satisfied
 
 **c)** What is the maximum clock frequency this circuit can operate at?
+244 MHz
 
 **d)** If the clock skew increased to 0.5 ns, which constraint (setup or hold) would be violated first? Explain.
+the setup time constraint assuming we run at the 244MHz optimal frequecy. Hold time is violated after setup time
 
 ---
 
