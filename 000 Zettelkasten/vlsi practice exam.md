@@ -57,36 +57,36 @@ TRUE
 **13.** The optimal number of stages (N) for a multi-stage path with path effort F is:
 - A) N = F^(1/2)
 - B) N = log_2(F)
-- C) N = log_4(F)
+- **C) N = log_4(F)**
 - D) N = 4F
 
 **14.** In the RC delay model for CMOS, a unit pMOS transistor has:
 - A) Resistance R, capacitance C
 - B) Resistance 2R, capacitance C
 - C) Resistance R/2, capacitance 2C
-- D) Resistance R, capacitance 2C
+- **D) Resistance R, capacitance 2C**
 
 **15.** Which adder architecture has O(√N) delay complexity?
 - A) Ripple carry adder
-- B) Carry-lookahead adder
+- **B) Carry-lookahead adder**
 - C) Carry-skip adder
 - D) Carry-select adder
 
 **16.** The path delay D in logical effort methodology is calculated as:
 - A) D = F + P
 - B) D = GBH + P
-- C) D = NF^(1/N) + P
+- **C) D = NF^(1/N) + P**
 - D) D = N·G·H + P
 
 **17.** What causes the body effect in CMOS transistors?
 - A) Channel length modulation
-- B) Source-to-bulk voltage affecting threshold voltage
+- **B) Source-to-bulk voltage affecting threshold voltage**
 - C) Velocity saturation of carriers
 - D) Gate oxide tunneling
 
 **18.** In a 6T SRAM cell, the size ratio N1 >> N2 is required for:
 - A) Write stability
-- B) Read stability
+- **B) Read stability**
 - C) Reduced power consumption
 - D) Faster access time
 
