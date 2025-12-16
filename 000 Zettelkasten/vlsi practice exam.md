@@ -149,15 +149,22 @@ N = log_4(F)
 idk
 
 **28.** Describe three techniques for reducing clock skew in VLSI designs. Explain how each technique helps minimize skew and its trade-offs.
-
+H-Tree - minimizes clock skew by making lengths equal to each required element. More expensive/takes up more space
+idk two more
 
 **29.** Compare ripple carry adders and carry-lookahead adders in terms of:
 - a) Delay complexity (big-O notation)
+- ripple carry adders have more delay then carry lookahead for large inputs
 - b) Area/transistor count
+- ripple carry adders are simpler, and takes up less space
 - c) Power consumption
+- carry lookahead take more power to  get gpk bits
 - d) When each would be preferred
+- ripple carry: simpler, smaller operand requirements
+- carry lookahead: more complex, faster time requirement for large operand
 
 **30.** Explain the concept of "time borrowing" in latch-based designs. How does this differ from flip-flop-based designs? What is the trade-off?
+we didn't cover this
 
 ---
 
@@ -193,8 +200,11 @@ Consider a synchronous circuit with the following parameters:
 - Combinational logic: t_pd = 3.8 ns, t_cd = 1.2 ns
 
 **a)** Verify that the setup time constraint is satisfied. Show your calculation.
+T_c >= t_skew + t_setup+t_pcq + t_pd
+5 > 4.7, satisfied
 
 **b)** Verify that the hold time constraint is satisfied. Show your calculation.
+hold >= -t_skew + t_ccq + t_cd
 
 **c)** What is the maximum clock frequency this circuit can operate at?
 
