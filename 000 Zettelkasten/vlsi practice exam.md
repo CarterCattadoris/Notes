@@ -93,43 +93,43 @@ TRUE
 **19.** Clock jitter primarily affects:
 - A) Only setup time margins
 - B) Only hold time margins
-- C) Both setup and hold time margins equally
+- **C) Both setup and hold time margins equally**
 - D) Cycle time but not race margins
 
 **20.** The electrical effort (h) in logical effort is defined as:
 - A) Input capacitance / Output capacitance
-- B) Output capacitance / Input capacitance
+- **B) Output capacitance / Input capacitance**
 - C) Logical effort × Path effort
 - D) Gate delay / Inverter delay
 
 **21.** Which memory type is volatile and requires the most transistors per bit?
 - A) DRAM (1T1C)
-- B) SRAM (6T)
+- **B) SRAM (6T)**
 - C) Flash memory
 - D) ROM
 
 **22.** The branching effort (B) accounts for:
 - A) Number of stages in a path
-- B) Fan-out and off-path capacitance
+- **B) Fan-out and off-path capacitance**
 - C) Intrinsic gate delay
 - D) Wire capacitance only
 
 **23.** In a carry-save multiplier, the critical path includes:
 - A) Only the partial product generation
 - B) Only the final carry-propagate adder
-- C) Partial product generation + final CPA
+- **C) Partial product generation + final CPA**
 - D) N stages of ripple carry addition
 
 **24.** Gate leakage in modern CMOS is caused by:
 - A) Reverse-biased PN junctions
 - B) Subthreshold conduction
-- C) Quantum tunneling through thin gate oxide
+- **C) Quantum tunneling through thin gate oxide**
 - D) Hot carrier injection
 
 **25.** The best stage effort (f̂) for minimum delay in logical effort is:
 - A) f̂ = 1
 - B) f̂ = e ≈ 2.718
-- C) f̂ = 4
+- C) **f̂ = 4**
 - D) f̂ = F^(1/N)
 
 ---
@@ -138,12 +138,18 @@ TRUE
 
 **26.** Explain the difference between propagation delay (t_pd) and contamination delay (t_cd) in combinational logic. Why are both important for timing analysis in sequential circuits?
 
+Propagation delay is the max time it takes for an input to be propagated through the combinational circuit and generate an output. Combinational delay is the shortest path through the circuit
+
 **27.** A path has logical effort G = 20, electrical effort H = 8, and no branching (B = 1). The parasitic delay P = 12. Calculate:
 - a) The path effort F
+F = GBH
 - b) The optimal number of stages N
+N = log_4(F)
 - c) The estimated minimum delay D
+idk
 
 **28.** Describe three techniques for reducing clock skew in VLSI designs. Explain how each technique helps minimize skew and its trade-offs.
+
 
 **29.** Compare ripple carry adders and carry-lookahead adders in terms of:
 - a) Delay complexity (big-O notation)
