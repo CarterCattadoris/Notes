@@ -4,7 +4,13 @@ Tags:[[CSE 400 - Quantum]]
 
 Vector with X component a and Y component b
 
-$\vec{V} = a\hat{x} + b \hat{y}$
+$\vec{V} = a\hat{x} + b \hat{y} = (\hat{x}\cdot \hat{y})\hat{x} + $
+$a = \hat{x}\cdot \vec{v}$
+$b = \hat{y}\cdot \vec{v}$
+
+
+
+
 $\vec{V} = (\begin{matrix}A \\ B\end{matrix})$
 $V^T = (A \space B)$
 $V^T \cdot \vec{V} = (A \space B) \cdot (\begin{matrix}A \\ B\end{matrix})$
