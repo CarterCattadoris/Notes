@@ -18,5 +18,7 @@ ba, x, bc, bd
 ca, cb, x, cd
 da, db, dc, x
 
-$\Omega = \{ (a,b), (a,c), (a,d)\dots \}$
-1/12 chance 
+$\Omega = \{ (a,b), (a,c), (a,d),\dots , (d,c)\}$
+6/12 = 1/2 chance that c is chosen
+
+$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$= P(A \cup B) + P(C) - P((A \cup B) \cap C$
