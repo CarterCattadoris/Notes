@@ -35,4 +35,4 @@ $P(K) = 0.6$
 $P(C) = P(C \cap K) + P(C \cap K^C)$
 = $P(C|K) \cdot P(K) + P(C|K^C) \cdot P(K)$
 -> $1 \cdot 0.6 + \frac{1}{4} \cdot 0.4$
--> P(
+-> $P(C) = 0.7$
