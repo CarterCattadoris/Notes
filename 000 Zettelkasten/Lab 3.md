@@ -3,7 +3,7 @@
 
 ##### All checkpoints verified on xxx
 ---
-##### Jan 28, 2:00 PM
+##### Jan 28, 2:00-2:15PM
 
 command 1:
 ```
@@ -98,10 +98,39 @@ throttled=0x0
 ```
 
 ---
+##### Jan 28, 2:15-2:30PM
 Open a code editor (I used vscode)
 
 use subprocess.run to run terminal commands. The syntax is as follows:
 ```
 subprocess.run(['first word', 'second word', '...'], optional flag 1, optional flag 2)
 ```
-the output is returned as a string with a newline character, so opt
+the output is returned as a string with a newline character, so for the best formatting use .strip() to remove this
+
+```
+import subprocess
+
+  
+temp = subprocess.run(['vcgencmd', 'measure_temp'], capture_output=True, text=True)
+
+voltage = subprocess.run(['vcgencmd', 'measure_volts', 'sdram_c'], capture_output=True, text=True)
+
+  
+
+print(temp.stdout.strip())
+
+print(voltage.stdout.strip())
+```
+
+---
+##### Jan 28, 2:30-2:45PM
+
+key nano keybinds:
+in terminal, run nano <filepath> to edit your desired file, then:
+
+ctrl+G - display all keybinds and their functions
+ctrl+X - exit nano
+ctrl+O - write (save) the current buffer
+ctrl+K - cut the current line your cursor is on
+ctrl+U - paste
+ctrl+F - search your file
