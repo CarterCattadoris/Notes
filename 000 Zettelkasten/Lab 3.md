@@ -1,7 +1,7 @@
 ###### Lab 3: Raspberry Pi OS
 ###### Group Members: Carter Cattadoris, Lucas Le, Jon-Micheal Gonzalez
 
-##### All checkpoints verified on xxx
+##### All checkpoints verified on Jan 28
 ---
 ##### Jan 28, 2:00-2:15PM
 
