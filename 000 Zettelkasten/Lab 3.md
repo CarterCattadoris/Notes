@@ -90,3 +90,18 @@ sudo vclog --msg
 284194.971: sdram: sdram refresh 2081->8324 (1)
 286195.923: sdram: sdram refresh 2081->4162 (2)
 ```
+
+command 5: 
+```
+vcgencmd get_throttled
+throttled=0x0
+```
+
+---
+Open a code editor (I used vscode)
+
+use subprocess.run to run terminal commands. The syntax is as follows:
+```
+subprocess.run(['first word', 'second word', '...'], optional flag 1, optional flag 2)
+```
+the output is returned as a string with a newline character, so opt
