@@ -1,3 +1,7 @@
+202601281451
+Status: #idea
+Tags:[[Design of OS (CSE486)]]
+
 ###### Lab 3: Raspberry Pi OS
 ###### Group Members: Carter Cattadoris, Lucas Le, Jon-Micheal Gonzalez
 

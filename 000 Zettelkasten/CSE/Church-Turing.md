@@ -1,6 +1,6 @@
 202601131058
 Status: #idea
-Tags:[[ELE 400 - Deep Learning]]
+Tags:[[Deep Learning (ELE400)]]
 
 Any* language/computer can do any* computation
 

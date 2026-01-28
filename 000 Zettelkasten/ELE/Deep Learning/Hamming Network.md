@@ -1,6 +1,6 @@
 202601271508
 Status: #idea
-Tags:[[ELE 400 - Deep Learning]]
+Tags:[[Deep Learning (ELE400)]]
 
 Distance computation and comparison are essential to unsupervised
 learning networks. In most of the previous examples we’ve seen the

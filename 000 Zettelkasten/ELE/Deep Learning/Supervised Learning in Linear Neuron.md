@@ -1,6 +1,6 @@
 202601271456
 Status: #idea
-Tags:[[ELE 400 - Deep Learning]]
+Tags:[[Deep Learning (ELE400)]]
 
 insert neuron image here
 

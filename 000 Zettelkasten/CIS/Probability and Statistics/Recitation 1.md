@@ -1,6 +1,6 @@
 202601131118
 Status: #idea
-Tags:[[CIS 321]]
+Tags:[[Probability and Statistics (CIS321)]]
 
 1. let  A and B be 2 events in a sample space where $P(A) = \frac{2}{3}$, $P(B) = \frac{1}{6}$, and $P(A \cap B) = \frac{1}{9}$. What is $P(A \cup B)$?
 $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ = 2/3+1/6-1/9 = 13/18

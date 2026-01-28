@@ -1,6 +1,6 @@
 202601131141
 Status: #idea
-Tags:[[ELE 400 - Deep Learning]]
+Tags:[[Deep Learning (ELE400)]]
 
 $| 0 > < 0 | \psi$
 $= (|0><0|)(\alpha | 0 > + \beta | 1 >)$

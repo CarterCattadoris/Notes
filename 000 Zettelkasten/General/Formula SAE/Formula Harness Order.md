@@ -1,6 +1,6 @@
 202601121300
 Status: #idea
-Tags:[[Formula]]
+Tags:[[Formula SAE]]
 
 ## inner to outer
 

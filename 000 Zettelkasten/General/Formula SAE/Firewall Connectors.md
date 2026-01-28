@@ -1,6 +1,6 @@
 202601231230
 Status: #idea
-Tags:[[Formula]]
+Tags:[[Formula SAE]]
 ### Power Plug
 #### inner 
 h - sensor 0v B (coolant temperature sensor)
