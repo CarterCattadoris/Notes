@@ -21,6 +21,18 @@ $P(S_{2}|S_{1}) = 12/51$, given s1 happened what is the probability of s2
 $P(S_{2}| S_{1}^C) = \frac{13}{51}$
 
 calculate $P(S_{2})$ depending on whether the first card is a spade
+$P(S_{2}\cap S_{1}) + P(S_{2} \cap S_{1}^C)$, the first card either is or isnt a spade
+$= P(S_{2}|S_{1}) \cdot P(S_{1}) + P(S_{2}| S_{1}^C) \cdot P(S_{1}^C)$ = $\frac{12}{51} \cdot \frac{1}{4} + \frac{13}{51} \cdot \frac{3}{4} = \frac{1}{4}$
 
-$P(S_{2}\cap S_{1}) + P(S_{2} \cap S_{1}^C)$
-$= P(S_{2}|S_{1}) \cdot P(S_{1}) + P(S_{2}| S_{1}^C) \cdot P(S_{1}^C)$
+
+C: student answers correctly
+K: student knows the answer
+
+$P(K | C) = \frac{P(K \cap C)}{P(C)} = \frac{P(C|K)\cdot P(K)}{ P(C)}$
+$P(C|K) = 1$
+$P(C|K^C) = \frac{1}{4}$
+$P(K) = 0.6$
+$P(C) = P(C \cap K) + P(C \cap K^C)$
+= $P(C|K) \cdot P(K) + P(C|K^C) \cdot P(K)$
+-> $1 \cdot 0.6 + \frac{1}{4} \cdot 0.4$
+-> P(
