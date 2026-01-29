@@ -4,9 +4,9 @@ Core structure: `000 Zettelkasten` (Atomic Notes), `111 Reference`, `333 Templat
 
 # Key Directories
 - **Probability & Statistics**: `000 Zettelkasten/CIS/Probability and Statistics`
-- **Design of OS**: `000 Zettelkasten/CSE/Design of OS`
-- **Embedded & Mobile Systems**: `000 Zettelkasten/CSE/Embedded Systems`
-- **Deep Learning**: `000 Zettelkasten/ELE/Deep Learning`
+- **Design of OS**: `000 Zettelkasten/CSE/Design Operating Systems`
+- **Embedded & Mobile Systems**: `000 Zettelkasten/CSE/Embedded & Mobile Systems`
+- **Deep Learning**: `000 Zettelkasten/ELE/Deep Learning in Engrng Apps`
 
 # External Resources
 - **Probability**: `~/Downloads/ProbabilityPresentations`

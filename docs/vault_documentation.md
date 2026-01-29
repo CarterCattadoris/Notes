@@ -2,7 +2,7 @@
 
 ## 1. Directory Structure
 
-- **000 Zettelkasten/**: The core knowledge base. Notes are organized by subject folder (e.g., `CSE`, `General`, `Discrete Math`).
+- **000 Zettelkasten/**: The core knowledge base. Notes are organized by subject folder (e.g., `CSE`, `ELE`, `CIS`, `General`).
 - **111 Reference/**: Reference materials that are not atomic notes.
 - **333 Templates/**: Templates for creating new notes (`Core Zettel Idea.md`, `MOC.md`).
 - **Files/**, **Excalidraw/**: Attachments and diagrams.

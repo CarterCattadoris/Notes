@@ -1,3 +1,7 @@
+202601291340
+Status: #MOC
+Tags: [[Logic]], [[Discrete Math]]
+
 [[Logical Equivalence]]
 
 [[Logical Consequence]]
