@@ -91,5 +91,13 @@ Thus, $a | c$
 
 - What we need
 	- $a|c$
-		- $\exists$ integer d such that $a\cdot d=c$ 
-	- 
+		- $\exists$ integer d such that $a\cdot d=c$
+
+## Related Proof Techniques
+- [[Proof by Contraposition]]
+- [[Proof by Contradiction]]
+- [[Mathematical Induction]]
+
+---
+### References
+- [[Discrete Math (CIS375)]]

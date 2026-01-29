@@ -1,8 +1,8 @@
 202503041130
 Status: #idea
-Tags:[[Proofs]]
+Tags:[[Discrete Math (CIS375)]], [[Proofs]]
 
-[[Contradiction]]
+**Proof by contradiction** assumes the negation of what you want to prove, then derives a [[Contradiction|contradiction]].
 
 To show $$H1 ∧ H2 ∧ · · · ∧ Hk ⇒ C$$ 
 it suffices to show that  
@@ -36,3 +36,16 @@ Proof:(by contradiction)
 - Therefore, $2k = 2j+1$, which (by algebra) means that $2k-2j = 1$, and hence $k - j = \frac{1}{2}$
 - However, k and j cannot both be integers when $k-j=\frac{1}{2}$ contradicting earlier statements that they are integers.  
 - Because negating the desired conclusion leads to a contradiction, the original claim must be true.
+
+## Related Proof Techniques
+- [[Direct Proofs]]
+- [[Proof by Contraposition]]
+- [[Mathematical Induction]]
+
+## Related Concepts
+- [[Contradiction]]
+- [[Logic]]
+
+---
+### References
+- [[Discrete Math (CIS375)]]

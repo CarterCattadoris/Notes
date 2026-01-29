@@ -4,6 +4,10 @@ Use this file to track presentations processed, notes added, and structural chan
 
 | Date | Category | Description |
 | :--- | :--- | :--- |
+| 2026-01-29 | Enhancement | Added extensive contextual links across vault: connected proof techniques, linked probability to set theory, enhanced OOP concepts, added cross-references between functions/relations/sets |
+| 2026-01-29 | Structure | Organized CIS course folders: moved Discrete Math (54 notes) and Logic (22 notes) into `CIS/Discrete Math/`; moved Data Structures notes (26 notes) into `CIS/Data Structures/` |
+| 2026-01-29 | Structure | Updated MOC files: enhanced Discrete Math (CIS375), Data Structures (CIS351), and Logic MOCs with comprehensive topic organization and cross-links |
+| 2026-01-29 | Structure | Updated CIS.md to include all three courses: Data Structures, Discrete Math, and Probability & Statistics |
 | 2026-01-29 | Presentation | Processed all Deep Learning presentations (Notes250115.pdf, Notes260120(1).pdf, Notes260122(1).pdf, Notes260127(1).pdf) - created comprehensive notes on neural networks, learning algorithms, and clustering |
 | 2026-01-29 | Presentation | Processed `Day 6 Notes - Bayes' Rule Practice and Intro to Independence.pdf` (Probability) - updated Independence (Probability) with equivalent definitions and complement property |
 | 2026-01-29 | Presentation | Processed `Day 5 Notes - Bayes' Rule.pdf` (Probability) - updated Bayes' Rule with complete medical testing example |

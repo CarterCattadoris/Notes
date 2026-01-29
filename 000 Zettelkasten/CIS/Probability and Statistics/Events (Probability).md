@@ -52,6 +52,15 @@ $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 For disjoint events ($A \cap B = \emptyset$):
 $$P(A \cup B) = P(A) + P(B)$$
 
+## Connection to Set Theory
+
+Events are fundamentally [[Sets|sets]], and event operations are [[Set Operations|set operations]]:
+- Event intersection ↔ [[Intersection]]
+- Event union ↔ [[Unions]]
+- Event complement ↔ [[Set Difference]]
+- Disjoint events ↔ Disjoint sets
+
 ---
 ### References
 - Day 2 Lecture notes (CIS321)
+- [[Discrete Math (CIS375)]] - Set theory foundations

@@ -1,8 +1,8 @@
 202503041105
 Status: #idea
-Tags:[[Proofs]]
+Tags:[[Discrete Math (CIS375)]], [[Proofs]]
 
-[[Contrapositive]]
+**Proof by contraposition** proves a statement by proving its [[Contrapositive|contrapositive]] instead.
 To show
 $$
 H_{1} \land H_{2} \dots \land H_{k} \implies C_{1}
@@ -40,3 +40,17 @@ Proof:(by contrapositive)
 - Because $[w]_{R} \cap [z]_{R} \neq \emptyset$. there is some $c \in A$ such that $c \in [w]_{R}$ and $c \in [z]_{R}$, which means that $(w,c) \in R$ and $(z,c) \in R$. Because R is an equivalence relation, R is [[Symmetric]] and transitive, and hence $(c,z) \in R$ by symmetry
 - Because $(w,c) \in R$ and $(c,z) \in R$, $(w,z) \in R$ by [[Transitivity]]
 - Having proved the contrapositive, the original claim is true
+
+## Related Proof Techniques
+- [[Direct Proofs]]
+- [[Proof by Contradiction]]
+- [[Mathematical Induction]]
+
+## Related Concepts
+- [[Contrapositive]]
+- [[Logic]]
+- [[Equivalence Relations]]
+
+---
+### References
+- [[Discrete Math (CIS375)]]

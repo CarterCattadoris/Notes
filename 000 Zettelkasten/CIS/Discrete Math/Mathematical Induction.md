@@ -1,6 +1,8 @@
 202503251123
 Status: #idea
-Tags:[[Proofs]]
+Tags:[[Discrete Math (CIS375)]], [[Proofs]]
+
+**Mathematical induction** is a [[Proofs|proof technique]] for establishing statements about all natural numbers or integers above a base case.
 
 Proof: By mathematical induction  
 - Let $P (n)$ be the statement: **#1  
@@ -35,3 +37,13 @@ Proof: by mathematical induction
 - By the inductive hypothesis(IH), $11^k-4^k$ is divisible by 7, so $4\cdot (11^K-4^k$ is divisible by 7 and $7\cdot 11^k$ is divisible by 7, so the sum $7\cdot 11^k+4(11^k-4^k)$ is divisible by 7
 - Thus, for all $k \geq 0$, the conditional $P(k) \to P(k+1)$ is true
 - By the basis, the inductive step, and the PMI, the claim is true
+
+## Related Proof Techniques
+- [[Direct Proofs]]
+- [[Proof by Contraposition]]
+- [[Proof by Contradiction]]
+- [[Structural Induction]]
+
+---
+### References
+- [[Discrete Math (CIS375)]]

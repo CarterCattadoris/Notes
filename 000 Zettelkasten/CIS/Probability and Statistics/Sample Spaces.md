@@ -33,6 +33,11 @@ An [[Events (Probability)|event]] is a subset of the sample space. For a die tos
 - **Finite sample spaces**: Discrete outcomes (coin, die)
 - **[[Infinite Sample Spaces]]**: Countably infinite outcomes (number of tosses until heads)
 
+## Connection to Set Theory
+
+A sample space is a [[Sets|set]], and all properties of sets apply. The sample space serves as the universal set for probability calculations.
+
 ---
 ### References
 - Day 2 Lecture notes (CIS321)
+- [[Discrete Math (CIS375)]] - Set theory

@@ -30,7 +30,33 @@ Tags:[[Discrete Math (CIS375)]]
 		- The set of those x such that x is in set R and $x^3 = x$
 
 
-##### Other:
-[[Set Operations]]
-[[Set Method Translation]] 
-[[Set Proof Definitions]]
+## Related Concepts
+
+### Set Operations
+- [[Set Operations]]
+- [[Unions]]
+- [[Intersection]]
+- [[Set Difference]]
+- [[Symmetric Difference]]
+- [[Cartesian Product]]
+
+### Set Properties
+- [[Subsets]]
+- [[Set Equality]]
+- [[Powersets]]
+- [[Cardinality]]
+
+### Applications
+- [[Set Proofs]]
+- [[Set Method Translation]]
+- [[Set Proof Definitions]]
+
+### Cross-Disciplinary
+Sets are foundational to:
+- [[Sample Spaces]] - Probability theory
+- [[Binary Relations]] - Functions and relations
+- [[Events (Probability)]] - Probability events as subsets
+
+---
+### References
+- [[Discrete Math (CIS375)]]
