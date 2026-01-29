@@ -45,3 +45,17 @@ Tags: [[Tag1]], [[Tag2]] (Note: Tags are Wiki-links to other notes, not #hashtag
 - **Atomic**: Keep `#idea` notes focused on one concept.
 - ** interconnected**: Heavily link related concepts in the body.
 - **Timestamped**: Every note starts with a unique temporal ID.
+
+## 6. External Resources
+The following directories contain class presentations and reference materials. These should be processed and integrated into notes as needed:
+- **Probability & Statistics**: `~/Downloads/ProbabilityPresentations`
+- **Deep Learning / ELE**: `~/Downloads/ELE400Presentations`
+- **Operating Systems**: `~/Downloads/OSPresentations`
+
+## 7. Changelog Protocol
+The LLM must maintain a changelog to track progress and processed materials.
+- **Location**: `docs/CHANGELOG.md`
+- **Content**:
+    - List of presentations/files added to the vault.
+    - Summary of significant changes or refactors.
+    - Date and context of the operation.
