@@ -4,6 +4,7 @@ Tags: [[Deep Learning (ELE400)]]
 
 Recurrent network that finds the node with maximum value - used with [[Hamming Network]]
 
+![[Pasted image 20260129143416.png]]
 ### Structure
 - Single layer with recurrent connections
 - Each node has positive self-feedback ($+\theta$)
@@ -26,8 +27,12 @@ All nodes updated simultaneously
 
 ### Example
 5 nodes with initial values $(0.5, 0.9, 1, 0.9, 0.9)$, $\theta=1$, $\epsilon=0.2$
-
 Node 3 (value 1) will eventually win as the maximum
+$x_{k}(t+1) = max\left\{  0, -\sum \in x_{i} + \Theta x_{k}(t) \right\}$ 
+
+$x_{a}(2) = max\left\{  0, -\frac{1}{5}(0.9+0.9+0.9+0.5) + 1 \cdot 1  \right\}$ 
+$= max \left\{   0, -\frac{3.2}{5} + 1  \right\}$
+$= max\{ 0, 1-0.64 \} = 0.36$
 
 ---
 ### References
