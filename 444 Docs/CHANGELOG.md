@@ -9,6 +9,8 @@ Use this file to track presentations processed, notes added, and structural chan
 | 2026-01-29 | Enhancement | [UPDATED] Hamming Network: Reverted definition to match 'Deep Learning' presentation specific formulas (theta = -n/2). |
 | 2026-01-29 | Enhancement | Contextual Linking: Added cross-links for proof techniques, probability sets, and OOP concepts. |
 | 2026-01-29 | Presentation | Processed `Notes260129.pdf` (Deep Learning): Updated Hamming Network with lecture example. Created 'Simple Competitive Learning Network' and 'Reinforcement Learning'. |
+| 2026-01-29 | Content | [EXPANDED] Reinforcement Learning: Added formal definitions (State, Action, Policy), introduced 'Exploration vs Exploitation' and 'n-armed bandit' atomic notes. |
+| 2026-01-29 | Content | [UPDATED] Simple Competitive Learning: Added specific weight update rule (delta w = eta(i - w)) and input normalization context. |
 | 2026-01-29 | Documentation | [UPDATED] Guidelines: Added strict 'Source Policy' to CLAUDE.md and vault_documentation.md. Course materials are the primary source of truth; external info is supplementary only. |
 | 2026-01-29 | Enhancement | [UPDATED] Hamming Network: Added explicit matrix output formula (o = Wi + theta) and included Maxnet convergence example (Notes260129). |
 | 2026-01-29 | Status | **ALL PRESENTATIONS PROCESSED**: <br>• **ELE 400**: `Notes250115.pdf`, `Notes260120(1).pdf`, `Notes260122(1).pdf`, `Notes260127(1).pdf`, `Notes260129.pdf` <br>• **Probability**: `Day 2 Lecture notes.pdf`, `Day 3 Lecture Notes.pdf`, `Day 4 - notes.pdf`, `Day 5 Notes - Bayes' Rule.pdf`, `Day 6 Notes - Bayes' Rule Practice and Intro to Independence.pdf` <br>• **OS**: No files pending. |
