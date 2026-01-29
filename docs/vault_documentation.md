@@ -59,3 +59,9 @@ The LLM must maintain a changelog to track progress and processed materials.
     - List of presentations/files added to the vault.
     - Summary of significant changes or refactors.
     - Date and context of the operation.
+
+## 8. Content Source Priority
+**CRITICAL**: When creating or updating notes, prioritze course materials above all else.
+1.  **Course Presentations**: Use specific equations, variable names, and definitions from the PDF/PPTX files in `~/Downloads`.
+2.  **External Knowledge**: Use generic LLM knowledge *only* to fill gaps or explain concepts, but *never* to override specific formulas provided in the course (e.g., specific bias values in Neural Networks).
+3.  **Prompting**: If a presentation conflicts with standard external definitions, default to the presentation or ask the user.

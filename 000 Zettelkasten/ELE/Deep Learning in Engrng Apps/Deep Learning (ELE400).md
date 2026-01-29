@@ -27,7 +27,12 @@ Course covering neural networks and deep learning fundamentals for engineering a
 - [[Linear Feedforward Neural Network]]
 - [[Nonlinear Feedforward Neural Network]]
 - [[Hamming Network]]
+
 - [[Competitive Learning Network]]
+- [[Simple Competitive Learning Network]]
+
+### Advanced Topics
+- [[Reinforcement Learning]]
 
 ---
 ### References

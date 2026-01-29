@@ -1,32 +1,23 @@
-202601281742
+202601291416
 Status: #idea
 Tags: [[Deep Learning (ELE400)]]
 
-Learning paradigm where an agent learns through interaction with environment and reward signals
+**Reinforcement Learning (RL)** is a machine learning paradigm where an agent learns to make decisions by performing actions in an environment and receiving rewards or penalties.
 
-### Key Components
-- **Agent**: The learner/decision maker
-- **Environment**: What the agent interacts with
-- **State**: Current situation
-- **Action**: Choices available to agent
-- **Reward**: Feedback signal (positive or negative)
+## Core Components
+-   **Agent**: The learner or decision maker.
+-   **Environment**: Everything the agent interacts with.
+-   **State ($S$)**: The current situation of the agent.
+-   **Action ($A$)**: What the agent does.
+-   **Reward ($R$)**: Feedback signal (scalar) indicating success/failure.
 
-### Learning Process
-1. Agent observes current state
-2. Takes action based on policy
-3. Receives reward and new state
-4. Updates policy to maximize cumulative reward
+## Goal
+To maximize the expected cumulative reward over time.
 
-### Comparison to Other Paradigms
-- [[Supervised Learning]]: Uses labeled examples
-- [[Unsupervised Learning]]: Finds patterns without labels
-- **Reinforcement Learning**: Learns from rewards/penalties
-
-### Applications
-- Game playing (Chess, Go, video games)
-- Robotics control
-- Autonomous vehicles
-- Resource management
+## Reference
+- Sutton & Barto, *Reinforcement Learning: An Introduction*, 2nd Ed. [PDF](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
 ---
-### References
+### See Also
+- [[Supervised Learning]]
+- [[Unsupervised Learning]]

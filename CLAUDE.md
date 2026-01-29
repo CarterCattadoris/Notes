@@ -39,3 +39,7 @@ Tags: [[Broad Topic]]
 # Commands
 - **Search**: `ripgrep` or `grep` is preferred for finding content.
 - **New Note**: Ensure file name matches the primary concept.
+
+# Source Policy
+- **Primary Source**: Always use equations, definitions, and details from the course presentations (in `~/Downloads/*`) over external knowledge.
+- **External Info**: Use only to supplement understanding or when explicitly prompted. Course material is the source of truth.
