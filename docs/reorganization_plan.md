@@ -8,26 +8,28 @@ Reorganize `CSE`, `ELE`, and `General` directories to match the `CIS` structure 
 ### CSE (`000 Zettelkasten/CSE`)
 | Proposed Folder | Description/Keywords |
 | :--- | :--- |
-| `CSE 261 Digital Logic Design` | Gates, Boolean Algebra, K Maps, Latches, Flip Flops, FSM, Combinational/Sequential Logic. |
-| `CSE 384 Systems & Network Programming` | `CSE 384.md`, low-level systems programming notes. |
-| `CSE 381 Computer Architecture` | MIPS, CPI, Datapath, Assembly, Pipelining, `CSE 381.md`. |
-| `CSE 486 Design Operating Systems` | *Existing folder* (`Design of OS`). Move contents here. |
-| `CSE 398 Embedded & Mobile Systems` | *Existing folder* (`Embedded Systems`). Move embedded notes here. |
-| `CSE 464 Intro to VLSI Design` | CMOS, Transistors, Inverter, Layout, Stick Diagrams, `VLSI Exam`, `Finfet`, `Moore vs Mealy`. |
-| `PHY 212 General Physics II` | Basic Circuits (`Resistor`, `Capacitor`, `Ohm's Law`, `Voltage`, `Current`). |
+| `Digital Logic Design` | Gates, Boolean Algebra, K Maps, Latches, Flip Flops, FSM, Combinational/Sequential Logic. |
+| `Systems & Network Programming` | `CSE 384.md`, low-level systems programming notes. |
+| `Computer Architecture` | MIPS, CPI, Datapath, Assembly, Pipelining, `CSE 381.md`. |
+| `Design Operating Systems` | *Existing folder* (`Design of OS`). Move contents here. |
+| `Embedded & Mobile Systems` | *Existing folder* (`Embedded Systems`). Move embedded notes here. |
+| `Intro to VLSI Design` | CMOS, Transistors, Inverter, Layout, Stick Diagrams, `VLSI Exam`, `Finfet`, `Moore vs Mealy`. |
+| `General Physics II` | Basic Circuits (`Resistor`, `Capacitor`, `Ohm's Law`, `Voltage`, `Current`). |
 
 ### ELE (`000 Zettelkasten/ELE`)
 | Proposed Folder | Description/Keywords |
 | :--- | :--- |
-| `ELE 251 Fundamentals of Linear Systems` | Laplace (Transform, Inverse), Transfer Function, Bode Plots, Signals, `Linear Systems (ELE251).md`. |
-| `ELE 400 Deep Learning in Engrng Apps` | *Existing folder* (`Deep Learning`). Ensure all DL notes are inside. |
+| `Fundamentals of Linear Systems` | Laplace (Transform, Inverse), Transfer Function, Bode Plots, Signals, `Linear Systems (ELE251).md`. |
+| `Deep Learning in Engrng Apps` | *Existing folder* (`Deep Learning`). Ensure all DL notes are inside. |
 
 
 ### General (`000 Zettelkasten/General`)
 | Proposed Folder | Description/Keywords |
 | :--- | :--- |
 | `Meta` | `College.md`, `Sophomore.md`, `Engineering.md` (Personal/Career). |
-| `Projects/Formula SAE` | Move `Formula SAE` into a `Projects` subfolder or keep as is. |
+| `Projects` | `Formula SAE`. |
+| `General Physics II` | Basic Circuits (`Resistor`, `Capacitor`, `Ohm's Law`, `Voltage`, `Current`). |
+| `Math` | `Partial Fractions.md`, `Calculus`. |
 
 ## 2. Execution Instructions (For LLM)
 
@@ -50,7 +52,7 @@ To ensure another LLM can pick up if this process pauses:
 
 ## 4. Specific File Mappings
 
-- **Move to `CSE 261 Digital Logic Design`**:
+- **Move to `Digital Logic Design`**:
   - `AND Gate.md`, `OR gate.md`, `NOT Gate.md`, `NAND Gate.md`, `NOR Gate.md`
   - `Boolean Algebra*.md`, `De Morgan's Law.md`
   - `K Maps.md`, `Product of Sum K Map.md`
@@ -58,25 +60,40 @@ To ensure another LLM can pick up if this process pauses:
   - `Adders.md`, `Full Adder.md`, `Half Adder.md`
   - `FSM.md`, `Sequential Logic.md`, `Combinational Logic.md`
 
-- **Move to `CSE 381 Computer Architecture`**:
+- **Move to `Computer Architecture`**:
   - `MIPS.md`, `CPI.md`
   - `CSE 381.md`
   - `comp arch final.md`
 
-- **Move to `CSE 384 Systems & Network Programming`**:
+- **Move to `Systems & Network Programming`**:
   - `CSE 384.md`
 
-- **Move to `CSE 464 Intro to VLSI Design`**:
+- **Move to `Intro to VLSI Design`**:
   - `CMOS.md`, `CMOS Gates.md`, `Transistor.md`, `nMos.md`, `pMos.md`
   - `VLSI Final.md`, `vlsi practice exam.md`
   - `Stick Diagram.md` (if exists), `Inverter.md`
 
-- **Move to `ELE 251 Fundamentals of Linear Systems`**:
+- **Move to `Fundamentals of Linear Systems`**:
 
   - `Laplace Transform*.md`, `Inverse Laplace*.md`
   - `Transfer Function.md`, `Steady State.md`, `Transient State.md`
   - `Dirac Delta function.md`, `Step Function.md`
+  - `Dirac Delta function.md`, `Step Function.md`
 
+- **Move to `General/General Physics II`**:
+  - `Capacitor.md`, `Resistor.md`, `Inductor.md`, `Ohm's Law.md`, `Voltage.md`, `Current.md`, `Circuit Components.md`, `Resistance.md`, `Diode.md`
+
+- **Move to `Intro to VLSI Design`** (From General):
+  - `Transistor.md`, `Finfet.md`, `Semiconductor.md`, `Integrated Circuit (IC).md`, `Switches.md`
+
+- **Move to `Digital Logic Design`** (From General):
+  - `Hexadecimal.md`, `Timing Diagram.md`
+
+- **Move to `General/Projects`**:
+  - `Formula SAE`
+
+- **Move to `General/Math`**:
+  - `Partial Fractions.md`
 ## 4. Unidentified Files
 If a file's location is ambiguous:
 1.  Read the content.

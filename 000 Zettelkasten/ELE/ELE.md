@@ -3,8 +3,8 @@ Status: #MOC
 Tags:[[Engineering]]
 
 ### Courses
-- [[Linear Systems (ELE251)]]
-- [[Deep Learning (ELE400)]]
+- [[Fundamentals of Linear Systems]]
+- [[Deep Learning in Engrng Apps]]
 
 ---
 ### References

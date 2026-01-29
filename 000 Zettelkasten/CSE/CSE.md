@@ -3,9 +3,13 @@ Status: #MOC
 Tags:[[Engineering]]
 
 ### Courses
-- [[Digital Logic Design (CSE261)]]
-- [[Design of OS (CSE486)]]
-- [[Embedded Systems (CSE398)]]
+- [[Digital Logic Design]]
+- [[Computer Architecture]]
+- [[Systems & Network Programming]]
+- [[Design Operating Systems]]
+- [[Embedded & Mobile Systems]]
+- [[Intro to VLSI Design]]
+
 
 ---
 ### References
