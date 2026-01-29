@@ -2,6 +2,7 @@
 Status: #idea
 Tags:[[Formula SAE]]
 
+ADD: sprocket speed sensor
 ## inner to outer
 
 #### Crank position sensor (shielded)

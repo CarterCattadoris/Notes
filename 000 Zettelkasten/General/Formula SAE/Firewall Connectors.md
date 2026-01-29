@@ -1,6 +1,8 @@
 202601231230
 Status: #idea
 Tags:[[Formula SAE]]
+
+ADD: sprocket speed sensor
 ### Power Plug
 #### inner 
 h - sensor 0v B (coolant temperature sensor)
