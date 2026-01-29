@@ -14,7 +14,7 @@ Core structure: `000 Zettelkasten` (Atomic Notes), `111 Reference`, `333 Templat
 - **OS**: `~/Downloads/OSPresentations`
 
 # Changelog Protocol
-- Maintain `docs/CHANGELOG.md`.
+- Maintain `444 Docs/CHANGELOG.md`.
 - Log all processed presentations and significant vault changes.
 
 # Style Guidelines

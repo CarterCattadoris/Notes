@@ -1,5 +1,5 @@
 # Computer Engineering Knowledge Base
-> "Notes and resources from Sophomore to Senior year."
+> "Notes and resources from Sophomore to Senior year at **Syracuse University**."
 
 ## 🧭 Quick Navigation
 **Maps of Content (MOCs)**:
