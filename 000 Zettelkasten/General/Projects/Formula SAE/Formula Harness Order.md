@@ -80,3 +80,12 @@ ADD: sprocket speed sensor
 #### fuel pump
 - PDM
 - batt -
+
+MISSING:
+12 AWG black (30ft)
+yellow/green
+green/yellow
+
+need more:
+orange/red
+orange/black
