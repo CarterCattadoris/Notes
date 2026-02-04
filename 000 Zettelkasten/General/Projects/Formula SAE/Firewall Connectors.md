@@ -1,7 +1,13 @@
 202601231230
 Status: #idea
 Tags:[[Formula SAE]]
+NO LONGER NEEDED:
+side kill switch
+PDM 0v
 
+FREE COLORS:
+orange/green
+orange/white
 ### Power Plug
 #### inner 
 h - sensor 0v B (coolant temperature sensor)
