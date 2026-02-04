@@ -89,3 +89,8 @@ green/yellow
 need more:
 orange/red
 orange/black
+green/black (maybe, front harness length dependant)
+
+
+need:
+power/gnd splitters
