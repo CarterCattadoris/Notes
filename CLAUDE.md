@@ -26,17 +26,15 @@ Core structure: `000 Zettelkasten` (Atomic Notes), `111 Reference`, `333 Templat
 - **IDs**: File content MUST start with `YYYYMMDDHHmm` timestamp.
 - **Tone**: Concise, academic, heavily linked.
 
-# Image Handling
-- **Storage**: Store relevant images/diagrams that cannot be rendered in Markdown/LaTeX in `222 Files`.
-- **Source**: Extract from presentations.
-- **Usage**: Embed in relevant markdown files.
-
 # Roadmap Protocol
 - **File Requirement**: Each subject area must have a roadmap file.
 - **Naming Convention**: `_(Abbreviated Name) ROADMAP.md` (e.g., `_DL ROADMAP.md`).
 - **Location**: Stored in the respective subject folder.
 - **Content**: Ordered list of big ideas and relevant sub-ideas representing the learning path.
-- **Links**: Atomic note links are optional; focus on conceptual hierarchy.
+- **Links**: ALL items must be wiki-links `[[Note Name]]` to atomic notes that actively exist in the vault.
+- **Source Constraint**: ONLY include topics that have been covered in course presentations and have corresponding atomic notes created.
+- **No Placeholders**: Never add plain text topics or concepts without links. If a note doesn't exist, don't add it to the roadmap.
+- **Update Trigger**: Roadmaps should be updated AFTER processing presentations and creating new atomic notes, not speculatively.
 
 # Note Template
 ```markdown

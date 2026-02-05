@@ -26,11 +26,6 @@ Core structure: `000 Zettelkasten` (Atomic Notes), `111 Reference`, `333 Templat
 - **IDs**: File content MUST start with `YYYYMMDDHHmm` timestamp.
 - **Tone**: Concise, academic, heavily linked.
 
-# Image Handling
-- **Storage**: Store relevant images/diagrams that cannot be rendered in Markdown/LaTeX in `222 Files`.
-- **Source**: Extract from presentations.
-- **Usage**: Embed in relevant markdown files.
-
 # Roadmap Protocol
 - **File Requirement**: Each subject area must have a roadmap file.
 - **Naming Convention**: `_(Abbreviated Name) ROADMAP.md` (e.g., `_DL ROADMAP.md`).
