@@ -31,7 +31,21 @@
 - OCR for hand-written notes (unless supported natively by extraction engines).
 
 ## Traceability
-*(To be filled by roadmap)*
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| EXT-01 | Phase 1 | Pending |
+| EXT-02 | Phase 1 | Pending |
+| EXT-03 | Phase 1 | Pending |
+| EXT-04 | Phase 1 | Pending |
+| ZET-01 | Phase 2 | Pending |
+| ZET-02 | Phase 2 | Pending |
+| ZET-03 | Phase 2 | Pending |
+| ZET-04 | Phase 2 | Pending |
+| MAP-01 | Phase 3 | Pending |
+| MAP-02 | Phase 3 | Pending |
+| MAP-03 | Phase 3 | Pending |
+| MAP-04 | Phase 3 | Pending |
 
 ---
 *Last updated: 2026-02-05*
