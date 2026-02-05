@@ -82,7 +82,7 @@ ADD: sprocket speed sensor
 - batt -
 
 MISSING:
-12 AWG black (30ft)
+12 AWG black (15ft)
 yellow/green
 green/yellow
 
@@ -90,7 +90,7 @@ need more:
 orange/red
 orange/black
 green/black (maybe, front harness length dependant)
-
+white/black (same as above)
 
 need:
 power/gnd splitters
