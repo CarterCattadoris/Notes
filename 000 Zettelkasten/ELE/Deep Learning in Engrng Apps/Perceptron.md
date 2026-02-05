@@ -31,6 +31,6 @@ Setting $\Delta w_i = \eta \cdot x_i \cdot d$ guarantees this since $\sum \Delta
 3. Cannot solve XOR problem
 
 See also: [[Linear Separability]], [[Multi-class Classification]]
-
+sigmoid, ReLU, etc
 ---
 ### References
