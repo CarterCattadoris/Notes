@@ -44,6 +44,10 @@
 - Problem: Many loose notes likely lack YAML frontmatter or tags for better organization.
 - Blocks: Effective querying (Dataview) and graph filtering.
 
+**Automation Feasibility:**
+- Problem: "Automatic roadmap updates" (requested in project setup) requires custom scripting or complex Dataview queries which don't currently exist.
+- Impact: Manual maintenance burden until automation is built.
+
 ---
 
 *Concerns audit: 2025-05-27*
