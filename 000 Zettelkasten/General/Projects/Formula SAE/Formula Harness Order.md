@@ -44,13 +44,13 @@ sprocket sensor signal
 
 #### (crank sensor here)
 #### tps
-- signal
-- 5v
-- 0v
+- signal yellow/black
+- 5v orange/red
+- 0v orange/black
 #### oil pressure sensor
-- signal
-- 5v
-- 0v
+- signal orange/blue
+- 5v orange/red
+- 0v orange/black
 #### oil temp sensor
 - signal
 - 0v
