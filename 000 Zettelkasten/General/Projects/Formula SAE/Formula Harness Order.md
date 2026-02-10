@@ -3,15 +3,15 @@ Status: #idea
 Tags:[[Formula SAE]]
 
 Color selection:
-coil 1 pdm
-coil 2 pdm
-coil 3 pdm
-coil 4 pdm
+coil 1 pdm white/brown
+coil 2 pdm white/orange
+coil 3 pdm black/gray
+coil 4 pdm white/purple
 
-inj 1 pdm
-inj 2 pdm
-inj 3 pdm
-inj 4 pdm
+inj 1 pdm green/orange
+inj 2 pdm green/grey
+inj 3 pdm green/blue
+inj 4 pdm green/white
 
 sprocket sensor signal
 0v
