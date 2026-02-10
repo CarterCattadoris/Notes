@@ -2,7 +2,19 @@
 Status: #idea
 Tags:[[Formula SAE]]
 
-ADD: sprocket speed sensor
+Color selection:
+coil 1 pdm
+coil 2 pdm
+coil 3 pdm
+coil 4 pdm
+
+inj 1 pdm
+inj 2 pdm
+inj 3 pdm
+inj 4 pdm
+
+
+
 ## inner to outer
 
 #### Crank position sensor (shielded)
@@ -65,8 +77,14 @@ ADD: sprocket speed sensor
 - injector 4 signal
 - injector 4 pdm
 ### Branch 2
+
+#### sprocket speed
+- 0v
+- signal
+- 5v
 #### Coolant temp sensor
 - 0v
+- signal
 #### gear position sensor
 - signal
 - 5v pullup (w/ resistor)
