@@ -13,7 +13,9 @@ inj 2 pdm
 inj 3 pdm
 inj 4 pdm
 
-
+sprocket sensor signal
+0v
+5v
 
 ## inner to outer
 
