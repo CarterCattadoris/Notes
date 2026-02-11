@@ -51,14 +51,16 @@ sprocket sensor signal
 - signal orange/blue
 - 5v orange/red
 - 0v orange/black
+--- 
+done as of feb 10
 #### oil temp sensor
-- signal
-- 0v
+- signal yellow/purple
+- 0v orange/black
 #### LTC module
-- can lo
-- can hi
-- pdm
-- batt 
+- can lo blue 22ga
+- can hi green 22ga
+- pdm  blue 12ga
+- batt  black 12ga
 ### Branch 3
 #### injectors 1-2
 - injector 1 signal
