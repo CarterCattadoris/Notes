@@ -21,3 +21,5 @@ always @ (posedge clk) begin
 	[statements]
 end
 ```
+
+For combinational always blocks, always use sensitivity list of (\*). For sys verilog, use always_comb
