@@ -18,4 +18,4 @@ $$ Y = \overline{A + B} $$
 ---
 ### References
 - [[OR gate]]
-- [[NOT Gate]]
+- [[Zettelkasten/000 Zettelkasten/CSE/Digital Logic Design/NOT Gate]]

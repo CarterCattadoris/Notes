@@ -8,7 +8,7 @@
 ## 2. Basic Logic Gates
 - [[AND Gate]]
 - [[OR gate]]
-- [[NOT Gate]]
+- [[Zettelkasten/000 Zettelkasten/CSE/Digital Logic Design/NOT Gate]]
 - [[NAND Gate]]
 - [[NOR Gate]]
 - [[Compound Gates]]

@@ -18,4 +18,4 @@ $$ Y = \overline{A \cdot B} $$
 ---
 ### References
 - [[AND Gate]]
-- [[NOT Gate]]
+- [[Zettelkasten/000 Zettelkasten/CSE/Digital Logic Design/NOT Gate]]

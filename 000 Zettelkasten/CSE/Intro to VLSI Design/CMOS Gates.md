@@ -2,7 +2,7 @@
 Status: #idea
 Tags:[[CMOS]], 
 
-[[NOT Gate]]
+[[Zettelkasten/000 Zettelkasten/CSE/Digital Logic Design/NOT Gate]]
 
 [[AND Gate]] 
 
