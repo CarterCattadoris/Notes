@@ -65,9 +65,6 @@ sprocket sensor signal
 - injector 1 pdm
 - injector 2 signal
 - injector 2 pdm
-
----
-
 #### Intake pressure sensor
 - signal orange/yellow
 - 5v orange/red
@@ -81,14 +78,17 @@ sprocket sensor signal
 - injector 3 pdm
 - injector 4 signal
 - injector 4 pdm
+
+---
+
 ### Branch 2
 
 #### sprocket speed
-- 0v
-- signal
-- 5v
+- 0v orange/black
+- signal orange/green
+- 5v orange/red
 #### Coolant temp sensor
-- 0v
+- 0v 
 - signal
 #### gear position sensor
 - signal
