@@ -51,8 +51,6 @@ sprocket sensor signal
 - signal orange/blue
 - 5v orange/red
 - 0v orange/black
---- 
-done as of feb 10
 #### oil temp sensor
 - signal yellow/purple
 - 0v orange/black
@@ -67,13 +65,16 @@ done as of feb 10
 - injector 1 pdm
 - injector 2 signal
 - injector 2 pdm
+
+---
+
 #### Intake pressure sensor
-- signal
-- 5v
-- 0v
+- signal orange/yellow
+- 5v orange/red
+- 0v orange/black
 #### Intake temp sensor
-- signal
-- 0v
+- signal yellow/red
+- 0v orange/black
 
 #### injectors 3-4
 - injector 3 signal
