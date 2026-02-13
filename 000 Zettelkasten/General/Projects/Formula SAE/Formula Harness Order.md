@@ -88,13 +88,13 @@ sprocket sensor signal
 - signal orange/green
 - 5v orange/red
 #### Coolant temp sensor
-- 0v 
-- signal
+- 0v orange/black
+- signal yellow/white
 #### gear position sensor
-- signal
-- 5v pullup (w/ resistor)
-- 0v
-- neutral
+- signal orange/grey
+- 5v pullup (w/ resistor) orange/red
+- 0v orange/black
+- neutral yellow/grey
 
 ### Branch 1
 #### radiator fan
