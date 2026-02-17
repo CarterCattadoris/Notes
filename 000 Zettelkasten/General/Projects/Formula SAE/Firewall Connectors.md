@@ -9,6 +9,9 @@ FREE COLORS:
 orange/green (sprocket speed)
 orange/white (coolant/gear pos 0v)
 ### Power Plug
+#### inner
+
+
 #### inner 
 h - sensor 0v B (coolant temperature sensor)
 z - sensor 5v B (gear position pullup)
