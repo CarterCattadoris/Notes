@@ -1,13 +1,6 @@
 202601231230
 Status: #idea
 Tags:[[Formula SAE]]
-NO LONGER NEEDED:
-side kill switch
-PDM 0v
-
-FREE COLORS:
-orange/green (sprocket speed)
-orange/white (coolant/gear pos 0v)
 
 ### Power Plug
 #### inner
@@ -42,13 +35,28 @@ h - coil 1 PDM
 z - coil 2 PDM
 b - coil 3 PDM
 d - coil 4 PDM
-f - sensor 0v B (oil temp sensor)
+f -  sensor 0v B (oil temp sensor)
 
 #### Outer
 A - sensor 0v B (oil pressure sensor)
 B - sensor 5v B (oil pressure sensor) 
 C - sensor 0v B (TPS)
 D - sensor 5v B (TPS)
+E - PDM (injector 1)
+F - PDM (injector 2)
+G - PDM (injector 3)
+H - PDM (injector 4)
+J - sensor 5v B (intake pressure sensor)
+K - sensor 0v B (intake pressure sensor)
+L - sensor 0v B (intake temp sensor)
+M - sensor 0v B (sprocket speed sensor)
+N - sensor 5v B (sprocket speed sensor)
+P - sensor 0v B (coolant temperature sensor)
+Q - sensor 5v B (gear position pullup)
+R - sensor 0v B (gear position)
+S - sensor 5v B (speed sensor)
+T - sensor 0v B (speed sensor)
+
 
 
 
