@@ -8,9 +8,9 @@ PDM 0v
 FREE COLORS:
 orange/green (sprocket speed)
 orange/white (coolant/gear pos 0v)
+
 ### Power Plug
 #### inner
-
 
 #### inner 
 h - sensor 0v B (coolant temperature sensor)
@@ -37,6 +37,21 @@ P - PDM output 2 (coil 2)
 R - PDM output 2 (coil 3)
 S - PDM output 2 (coil 4)
 
+#### inner
+h - coil 1 PDM
+z - coil 2 PDM
+b - coil 3 PDM
+d - coil 4 PDM
+f - sensor 0v B (oil temp sensor)
+
+#### Outer
+A - sensor 0v B (oil pressure sensor)
+B - sensor 5v B (oil pressure sensor) 
+C - sensor 0v B (TPS)
+D - sensor 5v B (TPS)
+
+
+
 ### Main Plug
 
 #### inner
@@ -58,7 +73,6 @@ A - coolant temp sensor
 B - gear position sensor
 C - gear neutral sensor
 D - sprocket speed sensor
-
 E - injector 1
 F - injector 2
 G - intake pressure sensor
