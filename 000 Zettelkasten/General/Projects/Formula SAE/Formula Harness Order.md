@@ -99,10 +99,10 @@ sprocket sensor signal
 ### Branch 1
 #### radiator fan
 - PDM
-- batt -
+- batt - black
 #### fuel pump
 - PDM
-- batt -
+- batt - 
 
 MISSING:
 12 AWG black (15ft)
