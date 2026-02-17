@@ -49,8 +49,8 @@ f - sensor 5v B (cam position sensor)
 ##### 12 gauge
 i - PDM output 9 (LTC Module)
 Y - battery - (LTC Module)
-a - PDM output 4 (radiator fan)
-c - battery - (radiator fan)
+a - 
+c - 
 e - PDM output 3 (fuel pump)
 g - battery - (fuel pump)
 ##### outer
