@@ -88,12 +88,12 @@ sprocket sensor signal
 - signal orange/green
 - 5v orange/red
 #### Coolant temp sensor
-- 0v orange/black
+- 0v orange/white
 - signal yellow/white
 #### gear position sensor
 - signal orange/grey
 - 5v pullup (w/ resistor) orange/red
-- 0v orange/black
+- 0v orange/white
 - neutral yellow/grey
 
 ### Branch 1

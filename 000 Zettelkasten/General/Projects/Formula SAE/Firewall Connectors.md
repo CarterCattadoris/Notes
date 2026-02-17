@@ -6,8 +6,8 @@ side kill switch
 PDM 0v
 
 FREE COLORS:
-orange/green
-orange/white
+orange/green (sprocket speed)
+orange/white (coolant/gear pos 0v)
 ### Power Plug
 #### inner 
 h - sensor 0v B (coolant temperature sensor)
