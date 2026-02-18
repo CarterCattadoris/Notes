@@ -54,8 +54,6 @@ N - sensor 5v B (sprocket speed sensor)
 P - sensor 0v B (coolant temperature sensor)
 Q - sensor 5v B (gear position pullup)
 R - sensor 0v B (gear position)
-S - sensor 5v B (speed sensor)
-T - sensor 0v B (speed sensor)
 
 
 
