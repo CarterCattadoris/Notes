@@ -30,6 +30,10 @@ P1.4 A randomly selected chip is found to be defective. [14 pts]
 (a) Compute the probability it came from Line A (use Bayes’ rule). [10 pts]
 $P(A|D) = \frac{P(A \cap D)}{P(D)} = \frac{P(D | A) \cdot P(A)}{P(D)} = \frac{0.03 \cdot 0.6}{0.046} = 0.3913 = 39.13\%$
 (b) Interpret this probability in context. [4 pts]
-Even though line A produces 60% of the 
-P1.5 Are the events “chip is from Line A” and “chip is defective” independent? Justify your
-answer mathematically using the definition of independence. [6 pts]
+Even though line A produces 60% of the chips, the lower defect rate of 3% means it only produces 39.13% of defective chips
+P1.5 Are the events “chip is from Line A” and “chip is defective” independent? Justify your answer mathematically using the definition of independence. [6 pts]
+Independant if: $P(A\cap D) = P(A) \cdot P(D)$
+$P(A \cap D) = 0.018$
+$P(A) \cdot P(D) = 0.0276$
+$0.018 \neq 0.0276$, therefore they are NOT independant
+
