@@ -2,6 +2,11 @@
 Status: #idea
 Tags:[[Formula SAE]]
 
+FREE:
+yellow/brown
+yellow/blue
+
+
 Color selection:
 coil 1 pdm white/brown
 coil 2 pdm white/orange
