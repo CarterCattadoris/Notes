@@ -14,12 +14,13 @@ The **Input Embedding Layer** is the first component of a [[Transformer]] that c
 
 ### How It Works
 
-1. Each token is associated with a unique index
-2. The corresponding vector is retrieved from the **embedding matrix**
-3. The embedding matrix parameters are learned during training
+1. Each token is associated with a unique index.
+2. The corresponding vector is retrieved from the [[Embedding Matrix]].
+3. The embedding matrix parameters are learned during training via self-supervised learning.
 
 ### Properties
 
-- Vectors are dense, continuous representations
-- Dimensionality is a hyperparameter (e.g., 512, 768)
-- Values adjust during training based on the data
+- Vectors are dense, continuous representations.
+- Dimensionality is a hyperparameter (e.g., 300, 512, 768).
+- Values adjust during training based on the data.
+- The [[Embedding Matrix]] can be very large (e.g., 50,000 words x 300 dimensions = ~60 MB).

@@ -18,6 +18,7 @@ Where $f(s)$ is a nonlinear function
 See [[Activation Functions]] for details:
 - Step Function
 - Sigmoid: $y = \frac{1}{1 + e^{-k \cdot s}}$
+- Tanh: $y = \tanh(s)$
 - ReLU (Ramp)
 - Gaussian
 

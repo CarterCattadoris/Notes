@@ -4,6 +4,7 @@ Use this file to track presentations processed, notes added, and structural chan
 
 | Date | Category | Description |
 | :--- | :--- | :--- |
+| 2026-02-26 | Enhancement | [EXPANDED] Activation Functions: Added advantages/disadvantages for each function (Step, Sigmoid, ReLU, Gaussian). Added Tanh section. Added context on role of f'(s) in backpropagation weight updates. Updated Nonlinear Neuron to list Tanh. |
 | 2026-02-10 | Presentation | Processed `Notes260210.pdf` (Deep Learning): **Transformers Introduction**. Created 13 new atomic notes: Transformer, Input Embedding Layer, Positional Encoding, Self-Attention Mechanism, Query Vector, Key Vector, Value Vector, Attention Score, Multi-Head Attention, Softmax Function, Layer Normalization, Residual Connection, Large Language Model. |
 | 2026-02-10 | Structure | Created `_DL ROADMAP.md` for Deep Learning course progression. |
 | 2026-01-29 | Structure | [COMPLETED] Major Vault Reorganization: <br>• **CSE**: Renamed folders to 'Digital Logic Design', 'Computer Architecture', 'Systems & Network Programming', 'Intro to VLSI Design', 'Embedded & Mobile Systems'. <br>• **ELE**: Created 'Fundamentals of Linear Systems'. <br>• **General**: Cleaned up into 'Meta', 'Projects', 'Math', 'General Physics II'. <br>• **CIS**: Organized Discrete Math, Logic, and Data Structures. |

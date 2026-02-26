@@ -27,9 +27,16 @@ The objective is to learn a policy $\pi$:
 $$ \pi: S \times A \to [0, 1], \quad \pi(s, a) = P(A_t = a | S_t = s) $$
 The policy defines the probability of taking action $a$ in state $s$ to maximize the **expected cumulative reward**.
 
+## Key Properties
+- RL optimizes **total cumulative reward**, not instantaneous reward.
+- Analogous to biological learning: brains interpret hunger/pain as negative reinforcement and food/pleasure as positive reinforcement.
+
 ## Key Concepts
 -   **Exploration vs Exploitation**: Balancing the use of current knowledge ("greedy") vs trying new actions to find better rewards. See [[Exploration vs Exploitation]].
 -   **n-armed Bandit**: A classic problem demonstrating this trade-off. See [[n-armed bandit]].
+-   **Epsilon-Greedy Method**: A practical strategy for balancing exploration and exploitation. See [[Epsilon-Greedy Method]].
+-   **Action Value Estimation**: Estimating expected rewards for each action. See [[Action Value Estimation]].
+-   **Incremental Update Rule**: Efficient online update of value estimates. See [[Incremental Update Rule]].
 
 ---
 ### Reference
