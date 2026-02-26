@@ -20,6 +20,7 @@ See [[Activation Functions]] for details:
 - Sigmoid: $y = \frac{1}{1 + e^{-k \cdot s}}$
 - Tanh: $y = \tanh(s)$
 - ReLU (Ramp)
+- [[Leaky ReLU]]
 - Gaussian
 
 ### Network Output

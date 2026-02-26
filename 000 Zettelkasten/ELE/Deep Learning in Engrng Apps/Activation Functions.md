@@ -79,6 +79,27 @@ $$y = \max(0, s)$$
 
 ---
 
+### Leaky ReLU
+$$y = \begin{cases} x & \text{for } x \geq 0 \\ \alpha x & \text{for } x < 0 \end{cases}$$
+- Small constant $\alpha$ (e.g., 0.01) allows gradient flow for negative inputs
+- See [[Leaky ReLU]] for details
+
+**Advantages:**
+- Solves the dying ReLU problem: neurons with negative inputs still update
+- Retains ReLU efficiency and non-saturation for positive inputs
+
+**Disadvantages:**
+- Introduces an extra hyperparameter $\alpha$
+- Marginal improvement over ReLU in many practical cases
+
+---
+
+### Vanishing Gradient in Deep Networks
+
+Sigmoid and Tanh both suffer from **vanishing gradients** with large numbers of inputs and layers: their gradients diminish with increasing $|s|$. This is a key motivation for using ReLU and [[Leaky ReLU]] in deep [[Feedforward Neural Network|feedforward neural networks]].
+
+---
+
 ### Gaussian / Raised Cosine
 - Bell-shaped response centered around $s = 0$
 - Used in radial basis function networks
