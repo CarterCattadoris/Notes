@@ -50,4 +50,17 @@ $P(T_{1p} \cap T_{2p} | D^c) = P(T_{1p} | D^c) \cdot P(T_{2p} | D^c) = 0.05 * 0.
 $P(T_{1p} \cap T_{2p} | D) = P(T_{1p} | D) \cdot P(T_{2p} | D) = 0.9 * 0.95 = 0.0015$
 
 ## P2.4
-$P(D | T_{1p} \cap T_{2p}) = \frac{P(T_{1p} \cap T_{2p}) \cdot P(D)}{P(T_{1}p \cap T_{2p})} = \frac{P(T_{1p} \cap T_{2p}) \cdot P(D)}{P(T_{1p} \cap T_{2p} | D) \cdot P(D) + P(T_{1p} \cap T_{2p} | D^c) \cdot P(D^c)} = (0.855$
+$P(D | T_{1p} \cap T_{2p}) = \frac{P(T_{1p} \cap T_{2p}) \cdot P(D)}{P(T_{1}p \cap T_{2p})} = \frac{P(T_{1p} \cap T_{2p}) \cdot P(D)}{P(T_{1p} \cap T_{2p} | D) \cdot P(D) + P(T_{1p} \cap T_{2p} | D^c) \cdot P(D^c)} = \frac{0.855 \cdot 0.02}{(0.855 \cdot 0.02) + (0.0015)(0.98)} = 0.921$
+## P2.5
+They are not independant in general. However they are conditionally independant using disease status, since $P(T_{1p} \cap T_{2p} | D) = P(T_{1p} | D) \cdot P(T_{2p} | D)$ (same with $D^c$). They are not independant without conditioning on D though. Therefore they are not indepdant in general
+
+# Theoretical questions
+1. The set of all possible outcomes of a random experiment. Randomly choosing and recording a time during the day ends up being an infinitely large sample space, instead of one that you would expect to be simple
+2. Mutually exclusive means 2 events cannot occur at the same time. Independant means one happening doesn't effect the probability of another. It cannot be both, since mutually exclusive events affect each others probabilities
+3. $P(A | B) = \frac{P(A\cap B)}{P(B)}$. This represents the probability that A happens given that B already happened
+4. Just because one event happened, the probability of the other related event happening is not affected at all
+5. Medical testing like the above problem. You need to know the probability of actually having the disease given the test result, because usually it is not 100%
+6. $P(A|B) = \frac{P(B|A)\cdot P(A)}{P(B)}$. This changes the probability of A once you observe B happening
+7. s
+8. The relationship between the ground being wet and it currently raining are not independant since rain increases the chance that the ground is wet at a given time
+9. $X
