@@ -61,6 +61,7 @@ They are not independant in general. However they are conditionally independant 
 4. Just because one event happened, the probability of the other related event happening is not affected at all
 5. Medical testing like the above problem. You need to know the probability of actually having the disease given the test result, because usually it is not 100%
 6. $P(A|B) = \frac{P(B|A)\cdot P(A)}{P(B)}$. This changes the probability of A once you observe B happening
-7. s
+7. It relates the prevelance of the disease to the probability of having the disease given that you test positive. The risk would most likely be overestimated without this
 8. The relationship between the ground being wet and it currently raining are not independant since rain increases the chance that the ground is wet at a given time
-9. $X
+9. A: a student studies for an exam. B: A student passes the exam. $P(B|A)$ is likely high, most students that study pass an exam. However, $P(A|B)$ is not necessarily high considering many students still pass even without studying
+10. Each test gives new evidence which updates the probability. Multiple stages can increase or decrease the final probability
