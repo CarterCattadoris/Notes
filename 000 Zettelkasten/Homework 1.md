@@ -37,3 +37,17 @@ $P(A \cap D) = 0.018$
 $P(A) \cdot P(D) = 0.0276$
 $0.018 \neq 0.0276$, therefore they are NOT independant
 
+# Problem 2
+
+## P2.1
+
+$S = \{(D, T_{1n }), (D, T_{1p}, T_{2p}), (D, T_{1p}, T_{2n}), (D^c, T_{1n}), (D^c, T_{1p}, T_{2p}), (D^c, T_{1p}, T_{2n})  \}$
+
+## P2.2
+$P(T_{1p} \cap T_{2p} | D^c) = P(T_{1p} | D^c) \cdot P(T_{2p} | D^c) = 0.05 * 0.03 = 0.0015$
+
+## P2.3
+$P(T_{1p} \cap T_{2p} | D) = P(T_{1p} | D) \cdot P(T_{2p} | D) = 0.9 * 0.95 = 0.0015$
+
+## P2.4
+$P(D | T_{1p} \cap T_{2p}) = \frac{P(T_{1p} \cap T_{2p}) \cdot P(D)}{P(T_{1}p \cap T_{2p})} = \frac{P(T_{1p} \cap T_{2p}) \cdot P(D)}{P(T_{1p} \cap T_{2p} | D) \cdot P(D) + P(T_{1p} \cap T_{2p} | D^c) \cdot P(D^c)} = (0.855$
