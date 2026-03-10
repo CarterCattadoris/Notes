@@ -18,8 +18,8 @@ positive: orange/red
 ground: orange/white
 
 Pneumatic shift:
-up/down:yellow/brown
-up/down:yellow/blue
+down:yellow/brown
+up:yellow/blue
 pos/neg: white/purple
 
 sprocket sensor signal
