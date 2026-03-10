@@ -20,7 +20,7 @@ ground: orange/white
 Pneumatic shift:
 up/down:yellow/brown
 up/down:yellow/blue
-
+pos/neg: white/purple
 
 sprocket sensor signal
 0v
