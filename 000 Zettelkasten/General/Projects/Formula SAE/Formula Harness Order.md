@@ -2,11 +2,6 @@
 Status: #idea
 Tags:[[Formula SAE]]
 
-FREE:
-yellow/brown
-yellow/blue
-
-
 Color selection:
 coil 1 pdm white/brown
 coil 2 pdm white/orange
@@ -17,6 +12,15 @@ inj 1 pdm green/orange
 inj 2 pdm green/grey
 inj 3 pdm green/blue
 inj 4 pdm green/white
+
+Brake Light:
+positive: orange/red
+ground: orange/white
+
+Pneumatic shift:
+up/down:yellow/brown
+up/down:yellow/blue
+
 
 sprocket sensor signal
 0v
