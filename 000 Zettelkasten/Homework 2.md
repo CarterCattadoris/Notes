@@ -66,3 +66,10 @@ IQR = Q3 - Q1 = 18 - 3 = 15 minutes
 =339.43
 3. std dev = $\sqrt{ 339.43 } = 18.42$
 4. median is between 33 and 40, so 36.5
+5. mode = 65, appears twice
+6. range = 65 - 18 = 47
+7. Q1 = $\frac{22+27}{2}=24.5$, Q3 = $\frac{50+65}{2}=57.5$, IQR = 57.5-24.5 = 33
+
+## Part 4
+1. Their respective statistics are different because they contain different subsets of the population. Sample A is mostly shorter wait times with a few longer ones, producing a lower median and mean while Sample B has mostly longer wait times producing higher values for both. 
+2. Sample A better represents the population. Its mean and median are a lot closer to the populations compared to sample B. It also shares the same mode of 3, and has a slightly closer standard deviation. Overall, all of its descriptive statistics are a lot closer so it better represents the population
