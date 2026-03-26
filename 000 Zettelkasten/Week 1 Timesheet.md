@@ -12,4 +12,4 @@ Carter C:
 12:45-3:35 wednesday
 - Worked on ESP32 wifi connection (working)
 - worked on ESP32 udp server (working)
-- 
+- Worked on ESP32 JSON command parsing, including mutex to ensure data doesnt get overwritten on accident (working)
