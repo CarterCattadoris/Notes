@@ -19,13 +19,13 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 
 ### Power Plug — Inner Ring, 20ga
 
-| Pin | Function | Wire Color | ECU/PDM Destination | Branch |
-|-----|----------|------------|---------------------|--------|
-| h | Coil 1 PDM return | white/brown | PDM (coil 1 output) | 5 |
-| z | Coil 2 PDM return | white/orange | PDM (coil 2 output) | 5 |
-| b | Coil 3 PDM return | black/gray | PDM (coil 3 output) | 5 |
-| d | Coil 4 PDM return | white/purple | PDM (coil 4 output) | 5 |
-| f | Oil Temperature Sensor 0v | orange/black | sensor 0v B | 4 |
+| Pin | Function                  | Wire Color   | ECU/PDM Destination | Branch |
+| --- | ------------------------- | ------------ | ------------------- | ------ |
+| h   | Coil 1 PDM return         | white/brown  | PDM (coil 1 output) | 5      |
+| z   | Coil 2 PDM return         | white/orange | PDM (coil 2 output) | 5      |
+| b   | Coil 3 PDM return         | black/gray   | PDM (coil 3 output) | 5      |
+| d   | Coil 4 PDM return         | white/purple | PDM (coil 4 output) | 5      |
+| f   | Oil Temperature Sensor 0v | orange/black | sensor 0v B         | 4      |
 
 ### Power Plug — Outer Ring, 20ga
 
