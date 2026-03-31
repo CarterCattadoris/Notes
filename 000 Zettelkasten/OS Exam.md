@@ -5,7 +5,7 @@
 ---
 ### 1. What Is a Process?
 
-	A **process** is a program in execution. A program is just source code stored on disk; a process is that code loaded into memory with its own state, ready to be run by the CPU.
+A **process** is a program in execution. A program is just source code stored on disk; a process is that code loaded into memory with its own state, ready to be run by the CPU.
 
 **How a process is created (what the OS does when you double-click an icon):**
 
