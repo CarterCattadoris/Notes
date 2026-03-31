@@ -12,6 +12,8 @@ blue/red
 brown/white
 
 NEED TO DO:
+choose wire color for fan switch from ecu -> pdm
+
 
 ## Firewall Connector Pin-Outs
 
