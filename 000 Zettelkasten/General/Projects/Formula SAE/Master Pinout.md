@@ -6,13 +6,13 @@ Maybe free wire colors (verify):
 white/green??
 blue/black
 blue/gray
-blue/green
-blue/orange
-blue/red
-brown/white
+blue/green (used)
+blue/orange (used)
+blue/red (used)
+brown/white (used)
 
 NEED TO DO:
-choose wire color for fan switch from ecu -> pdm
+choose wire color for fan switch from ecu -> pdm (brown/white)
 
 
 ## Firewall Connector Pin-Outs
