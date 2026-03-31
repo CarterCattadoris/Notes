@@ -199,10 +199,10 @@ Tags:[[Formula SAE]]
 
 ### Pneumatic Shift & Brake
 
-| Wire Name | Color | Gauge |
-|-----------|-------|-------|
-| Pneumatic Upshift | yellow/blue | 20ga |
-| Pneumatic Downshift | yellow/brown | 20ga |
-| Pneumatic Positive | white/purple | 20ga |
-| Brake Positive | orange/red | 20ga |
-| Brake Negative | orange/black | 20ga |
+| Wire Name               | Color        | Gauge |
+| ----------------------- | ------------ | ----- |
+| Pneumatic Upshift 12V   | yellow/blue  | 20ga  |
+| Pneumatic Downshift 12V | yellow/brown | 20ga  |
+| Pneumatic GND           | white/purple | 20ga  |
+| Brake Positive          | orange/red   | 20ga  |
+| Brake Negative          | orange/black | 20ga  |
