@@ -14,7 +14,7 @@ Starter Button Return
 Cockpit Kill (and BOTS) return
 PDM 12v
 GND
-Upshift Padde
+Upshift Paddle
 Downshift Paddle
 brake switch
 Fuel Pump switch

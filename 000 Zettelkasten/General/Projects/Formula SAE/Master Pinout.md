@@ -1,6 +1,16 @@
 202603302226
 Status: #idea
 Tags:[[Formula SAE]]
+
+Maybe free wire colors (verify):
+white/green??
+blue/black
+blue/gray
+blue/green
+blue/orange
+blue/red
+brown/white
+
 ## Firewall Connector Pin-Outs
 
 ### Power Plug — Inner Ring, 20ga
