@@ -313,11 +313,11 @@ A **system call** is how a user program requests a service from the OS that requ
 
 **Three ways to transition user mode → kernel mode:**
 
-|Mechanism|Trigger|Intentional?|Example|
-|---|---|---|---|
-|**System call**|Program explicitly requests OS service|Yes (programmer intended it)|`read()`, `write()`, `fork()`, `exec()`, `waitpid()`, `exit()`|
-|**Trap (exception)**|Error during program execution|No (accidental)|Division by zero, invalid memory access (segfault)|
-|**Interrupt**|External hardware device signals the CPU|No (external event)|Disk controller done, keyboard stroke, timer tick|
+| Mechanism            | Trigger                                  | Intentional?                 | Example                                                        |
+| -------------------- | ---------------------------------------- | ---------------------------- | -------------------------------------------------------------- |
+| **System call**      | Program explicitly requests OS service   | Yes (programmer intended it) | `read()`, `write()`, `fork()`, `exec()`, `waitpid()`, `exit()` |
+| **Trap (exception)** | Error during program execution           | No (accidental)              | Division by zero, invalid memory access (segfault)             |
+| **Interrupt**        | External hardware device signals the CPU | No (external event)          | Disk controller done, keyboard stroke, timer tick              |
 
 **Traps:** CPU encounters an error → jumps to the OS exception handler → OS usually kills the offending process.
 
@@ -392,12 +392,12 @@ programmed_io(char[] data_output) {
 
 #### Summary Table
 
-||Programmed I/O|Interrupt-Driven I/O|DMA I/O|
-|---|---|---|---|
-|CPU during I/O|Busy (polling)|Free (runs other processes)|Free (runs other processes)|
-|Data transfer|CPU does it|CPU copies from OS buffer to user space|DMA hardware does it|
-|Uses interrupts?|No|Yes|Yes|
-|CPU freed most?|No|Partially|Yes|
+| Programmed I/O   | Interrupt-Driven I/O | DMA I/O                                 |                             |
+| ---------------- | -------------------- | --------------------------------------- | --------------------------- |
+| CPU during I/O   | Busy (polling)       | Free (runs other processes)             | Free (runs other processes) |
+| Data transfer    | CPU does it          | CPU copies from OS buffer to user space | DMA hardware does it        |
+| Uses interrupts? | No                   | Yes                                     | Yes                         |
+| CPU freed most?  | No                   | Partially                               | Yes                         |
 
 ---
 
