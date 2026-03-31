@@ -11,6 +11,8 @@ blue/orange
 blue/red
 brown/white
 
+NEED TO DO:
+
 ## Firewall Connector Pin-Outs
 
 ### Power Plug — Inner Ring, 20ga
@@ -72,29 +74,29 @@ brown/white
 
 ### Main Plug — Outer Ring
 
-| Pin | Function | Wire Color | ECU/PDM Destination | Branch |
-|-----|----------|------------|---------------------|--------|
-| A | Coolant Temperature Sensor signal | yellow/white | ECU coolant temp input | 2 |
-| B | Gear Position Sensor signal | orange/grey | ECU gear position input | 2 |
-| C | Gear Neutral Switch | yellow/grey | ECU neutral input | 2 |
-| D | Sprocket Speed Sensor signal | orange/green | ECU speed input | 2 |
-| E | Injector 1 signal | white #5 | ECU injector 1 driver | 3 |
-| F | Injector 2 signal | white #6 | ECU injector 2 driver | 3 |
-| G | Intake Pressure Sensor signal | orange/yellow | ECU MAP input | 3 |
-| H | Intake Temperature Sensor signal | yellow/red | ECU IAT input | 3 |
-| J | Injector 3 signal | white #7 | ECU injector 3 driver | 3 |
-| K | Injector 4 signal | white #8 | ECU injector 4 driver | 3 |
-| L | Throttle Position Sensor signal | yellow/black | ECU TPS input | 4 |
-| M | Oil Pressure Sensor signal | orange/blue | ECU oil pressure input | 4 |
-| N | Oil Temperature Sensor signal | yellow/purple | ECU oil temp input | 4 |
-| P | CAN Lo (LTC Module) | blue 22ga | ECU/CAN bus Lo | 4 |
-| R | CAN Hi (LTC Module) | green 22ga | ECU/CAN bus Hi | 4 |
-| S | Coil 1 igniter signal | white #1 | ECU ignition 1 driver | 5 |
-| T | Coil 2 igniter signal | white #2 | ECU ignition 2 driver | 5 |
-| U | Coil 3 igniter signal | white #3 | ECU ignition 3 driver | 5 |
-| V | Coil 4 igniter signal | white #4 | ECU ignition 4 driver | 5 |
-| W | **SPARE — unassigned** | — | — | — |
-| X | **SPARE — unassigned** | — | — | — |
+| Pin | Function                          | Wire Color    | ECU/PDM Destination     | Branch |
+| --- | --------------------------------- | ------------- | ----------------------- | ------ |
+| A   | Coolant Temperature Sensor signal | yellow/white  | ECU coolant temp input  | 2      |
+| B   | Gear Position Sensor signal       | orange/grey   | ECU gear position input | 2      |
+| C   | Gear Neutral Switch               | yellow/grey   | ECU neutral input       | 2      |
+| D   | Sprocket Speed Sensor signal      | orange/green  | ECU speed input         | 2      |
+| E   | Injector 1 signal                 | white #5      | ECU injector 1 driver   | 3      |
+| F   | Injector 2 signal                 | white #6      | ECU injector 2 driver   | 3      |
+| G   | Intake Pressure Sensor signal     | orange/yellow | ECU MAP input           | 3      |
+| H   | Intake Temperature Sensor signal  | yellow/red    | ECU IAT input           | 3      |
+| J   | Injector 3 signal                 | white #7      | ECU injector 3 driver   | 3      |
+| K   | Injector 4 signal                 | white #8      | ECU injector 4 driver   | 3      |
+| L   | Throttle Position Sensor signal   | yellow/black  | ECU TPS input           | 4      |
+| M   | Oil Pressure Sensor signal        | orange/blue   | ECU oil pressure input  | 4      |
+| N   | Oil Temperature Sensor signal     | yellow/purple | ECU oil temp input      | 4      |
+| P   | CAN Lo (LTC Module)               | blue 22ga     | ECU/CAN bus Lo          | 4      |
+| R   | CAN Hi (LTC Module)               | green 22ga    | ECU/CAN bus Hi          | 4      |
+| S   | Coil 1 igniter signal             | white #1      | ECU ignition 1 driver   | 5      |
+| T   | Coil 2 igniter signal             | white #2      | ECU ignition 2 driver   | 5      |
+| U   | Coil 3 igniter signal             | white #3      | ECU ignition 3 driver   | 5      |
+| V   | Coil 4 igniter signal             | white #4      | ECU ignition 4 driver   | 5      |
+| W   | **SPARE — unassigned**            | —             | —                       | —      |
+| X   | **SPARE — unassigned**            | —             | —                       | —      |
 
 ---
 
