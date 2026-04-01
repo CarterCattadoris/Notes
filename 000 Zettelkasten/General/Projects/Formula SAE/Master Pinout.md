@@ -49,7 +49,7 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 | S   | Gear Position Sensor 0v        | orange/white | sensor 0v B             | 2      |
 | T   | Pneumatic Upshift              | yellow/blue  | TBD                     | TBD    |
 | U   | Pneumatic Downshift            | yellow/brown | TBD                     | TBD    |
-| V   | Pneumatic Positive             | white/purple | TBD                     | TBD    |
+| V   | Pneumatic Positive             | blue/black   | (change???)             | TBD    |
 | W   | Brake Positive                 | orange/red   | TBD                     | TBD    |
 | X   | Brake Negative                 | orange/black | TBD                     | TBD    |
 
@@ -217,6 +217,6 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 | ----------------------- | ------------ | ----- |
 | Pneumatic Upshift 12V   | yellow/blue  | 20ga  |
 | Pneumatic Downshift 12V | yellow/brown | 20ga  |
-| Pneumatic GND           | white/purple | 20ga  |
+| Pneumatic GND           | blue/black   | 20ga  |
 | Brake Positive          | orange/red   | 20ga  |
 | Brake Negative          | orange/black | 20ga  |
