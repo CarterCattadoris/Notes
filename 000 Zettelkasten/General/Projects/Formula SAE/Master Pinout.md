@@ -29,29 +29,29 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 
 ### Power Plug — Outer Ring, 20ga
 
-| Pin | Function | Wire Color | ECU/PDM Destination | Branch |
-|-----|----------|------------|---------------------|--------|
-| A | Oil Pressure Sensor 0v | orange/black | sensor 0v B | 4 |
-| B | Oil Pressure Sensor 5v | orange/red | sensor 5v B | 4 |
-| C | Throttle Position Sensor 0v | orange/black | sensor 0v B | 4 |
-| D | Throttle Position Sensor 5v | orange/red | sensor 5v B | 4 |
-| E | Injector 1 PDM return | green/orange | PDM (injector 1 output) | 3 |
-| F | Injector 2 PDM return | green/grey | PDM (injector 2 output) | 3 |
-| G | Injector 3 PDM return | green/blue | PDM (injector 3 output) | 3 |
-| H | Injector 4 PDM return | green/white | PDM (injector 4 output) | 3 |
-| J | Intake Pressure Sensor 5v | orange/red | sensor 5v B | 3 |
-| K | Intake Pressure Sensor 0v | orange/black | sensor 0v B | 3 |
-| L | Intake Temperature Sensor 0v | orange/black | sensor 0v B | 3 |
-| M | Sprocket Speed Sensor 0v | orange/black | sensor 0v B | 2 |
-| N | Sprocket Speed Sensor 5v | orange/red | sensor 5v B | 2 |
-| P | Coolant Temperature Sensor 0v | orange/white | sensor 0v B | 2 |
-| R | Gear Position Sensor 5v pullup | orange/red | sensor 5v B | 2 |
-| S | Gear Position Sensor 0v | orange/white | sensor 0v B | 2 |
-| T | Pneumatic Upshift | yellow/blue | TBD | TBD |
-| U | Pneumatic Downshift | yellow/brown | TBD | TBD |
-| V | Pneumatic Positive | white/purple | TBD | TBD |
-| W | Brake Positive | orange/red | TBD | TBD |
-| X | Brake Negative | orange/black | TBD | TBD |
+| Pin | Function                       | Wire Color   | ECU/PDM Destination     | Branch |
+| --- | ------------------------------ | ------------ | ----------------------- | ------ |
+| A   | Oil Pressure Sensor 0v         | orange/black | sensor 0v B             | 4      |
+| B   | Oil Pressure Sensor 5v         | orange/red   | sensor 5v B             | 4      |
+| C   | Throttle Position Sensor 0v    | orange/black | sensor 0v B             | 4      |
+| D   | Throttle Position Sensor 5v    | orange/red   | sensor 5v B             | 4      |
+| E   | Injector 1 PDM return          | green/orange | PDM (injector 1 output) | 3      |
+| F   | Injector 2 PDM return          | green/grey   | PDM (injector 2 output) | 3      |
+| G   | Injector 3 PDM return          | green/blue   | PDM (injector 3 output) | 3      |
+| H   | Injector 4 PDM return          | green/white  | PDM (injector 4 output) | 3      |
+| J   | Intake Pressure Sensor 5v      | orange/red   | sensor 5v B             | 3      |
+| K   | Intake Pressure Sensor 0v      | orange/black | sensor 0v B             | 3      |
+| L   | Intake Temperature Sensor 0v   | orange/black | sensor 0v B             | 3      |
+| M   | Sprocket Speed Sensor 0v       | orange/black | sensor 0v B             | 2      |
+| N   | Sprocket Speed Sensor 5v       | orange/red   | sensor 5v B             | 2      |
+| P   | Coolant Temperature Sensor 0v  | orange/white | sensor 0v B             | 2      |
+| R   | Gear Position Sensor 5v pullup | orange/red   | sensor 5v B             | 2      |
+| S   | Gear Position Sensor 0v        | orange/white | sensor 0v B             | 2      |
+| T   | Pneumatic Upshift              | yellow/blue  | TBD                     | TBD    |
+| U   | Pneumatic Downshift            | yellow/brown | TBD                     | TBD    |
+| V   | Pneumatic Positive             | white/purple | TBD                     | TBD    |
+| W   | Brake Positive                 | orange/red   | TBD                     | TBD    |
+| X   | Brake Negative                 | orange/black | TBD                     | TBD    |
 
 ### Main Plug — Inner Ring, 20ga
 
