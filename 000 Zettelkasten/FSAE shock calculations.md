@@ -59,9 +59,9 @@ f = (1/6.28) × √(150 × 386.4 / 149) = 3.14 Hz  ✓
 
 ## Summary
 
-|Spring|MR|Wheel Rate|Frequency|
-|---|---|---|---|---|
-|**Front current**|200 lb/in|2.0|800 lb/in|8.21 Hz|
-|**Front new**|200 lb/in|**0.66**|87 lb/in|**2.71 Hz**|
-|**Rear current**|350 lb/in|1.0|262.5 lb/in|4.15 Hz|
-|**Rear new**|**200 lb/in**|1.0|150 lb/in|**3.14 Hz**|
+| Spring            | MR            | Wheel Rate | Frequency   |             |
+| ----------------- | ------------- | ---------- | ----------- | ----------- |
+| **Front current** | 200 lb/in     | 2.0        | 800 lb/in   | 8.21 Hz     |
+| **Front new**     | 200 lb/in     | **0.66**   | 87 lb/in    | **2.71 Hz** |
+| **Rear current**  | 350 lb/in     | 1.0        | 262.5 lb/in | 4.15 Hz     |
+| **Rear new**      | **200 lb/in** | 1.0        | 150 lb/in   | **3.14 Hz** |
