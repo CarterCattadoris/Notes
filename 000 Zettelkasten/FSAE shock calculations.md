@@ -70,8 +70,10 @@ f = (1/6.28) × √(150 × 386.4 / 149) = 3.14 Hz  ✓
 
 ## New numbers
 
-with nick on scales: 2 1/8 ride height (oil pan 1/4 lower)
+with nick on scales: 1 7/8 off ground
 scales 1 1/4 tall
+
+5/8" in ground clearance
 3 3/8 spring length
 7 in ground to wheel
 
