@@ -65,3 +65,13 @@ f = (1/6.28) × √(150 × 386.4 / 149) = 3.14 Hz  ✓
 | **Front new**     | 200 lb/in     | **0.66**   | 87 lb/in    | **2.71 Hz** |
 | **Rear current**  | 350 lb/in     | 1.0        | 262.5 lb/in | 4.15 Hz     |
 | **Rear new**      | **200 lb/in** | 1.0        | 150 lb/in   | **3.14 Hz** |
+
+
+
+## New numbers
+
+with nick on scales: 2 1/8 ride height (oil pan 1/4 lower)
+scales 1 1/4 tall
+3 3/8 spring length
+7 in ground to wheel
+
