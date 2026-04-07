@@ -6,15 +6,6 @@ Maybe free wire colors (verify):
 white/green??
 blue/black
 blue/gray
-blue/green (used)
-blue/orange (used)
-blue/red (used)
-brown/white (used)
-
-NEED TO DO:
-choose wire color for fan switch from ecu -> pdm (brown/white)
-
-
 ## Firewall Connector Pin-Outs
 
 ### Power Plug — Inner Ring, 20ga
@@ -102,35 +93,59 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 
 ---
 
-## Discrepancies & Missing Information
+## Front Harness
 
-### 🔴 High Priority
+### Front Harness Wire List
 
-- **No specific ECU/PDM pin numbers documented.** Connector docs reference generic buses ("sensor 0v B", "sensor 5v B", "PDM output 2/3/9") but never specify actual ECU or PDM header pin numbers. Awaiting pinout data.
+| Wire Name                      | Color        | Notes                                  |
+| ------------------------------ | ------------ | -------------------------------------- |
+| Sensor 5v B                    | white/red    | Front brake pressure sensor supply     |
+| Sensor 0v B                    | green/black  | Front brake pressure sensor ground     |
+| Front Brake Pressure signal    | green/gray   |                                        |
+| Rear Brake Pressure signal     | green/orange |                                        |
+| CAN Hi                         | green        |                                        |
+| CAN Lo                         | blue         |                                        |
+| Launch Switch                  | white/blue   |                                        |
+| Anti Lag Switch                | green/purple |                                        |
+| Starter Button Return          | white/green  |                                        |
+| Cockpit Kill (and BOTS) Return | white/brown  |                                        |
+| Dash PDM 12v                   | blue/red     |                                        |
+| GND                            | black        | To chassis, not routed through harness |
+| Upshift Paddle                 | blue/orange  |                                        |
+| Downshift Paddle               | green/blue   |                                        |
+| Brake Switch                   | blue/gray    |                                        |
+| Fuel Pump Switch               | white/orange |                                        |
+| Inj/Ign Enable Switch          | blue/brown   |                                        |
+| Fan Override Switch            | white/purple |                                        |
+| PDM 0v                         | white/black  |                                        |
+| PDM 0v                         | blue/green   |                                        |
 
-- **Crank Position Sensor and Cam Position Sensor share identical wire colors.** Crank signal = white, cam signal = white. Crank 0v = white/blue, cam 0v = white/blue. These run in separate shielded cables so they're physically distinguishable, but if the shields are ever stripped back or wires are serviced loose, there's no way to tell crank from cam by color alone. Consider differentiating.
+### PDM ↔ ECU Link
 
-### 🟡 Medium Priority
+| Wire Name | Color | Notes |
+|-----------|-------|-------|
+| ECU Fan Switch | brown/white | |
+| ECU 12v | brown | |
 
-1. **Gear Neutral Switch has no Power Plug pin.** It passes through Main Plug outer:C to the ECU but doesn't appear on the Power Plug at all. This implies the neutral wire only needs to reach the Main Plug (signal only, no power/ground through Power Plug) — confirm routing is correct.
+### Connector Hub → Dash
 
-2. **Main Plug inner 12ga pins a and c are unassigned.** Two empty 12ga positions available if future loads are needed.
-
-3. **Power Plug outer pins T–X have wire colors but still need ECU/PDM destinations and branch assignments.** Pneumatic Upshift (yellow/blue), Pneumatic Downshift (yellow/brown), Pneumatic Positive (white/purple), Brake Positive (orange/red), Brake Negative (orange/black). These also need to be added to the branching diagram once routing is decided.
-
-### ⚪ Low Priority
-
-- **Coolant Temperature Sensor, Oil Temperature Sensor, and Intake Temperature Sensor are all 2-wire** (signal + 0v, no 5v). Correct for NTC thermistors with internal ECU pull-up — just confirm sensor types match.
-
-- **Cam Position Sensor = 3 wires (signal, 5v, 0v); Crank Position Sensor = 2 wires (signal, 0v).** Implies Hall-effect cam and VR/reluctor crank. Confirm this matches actual sensor hardware.
-
-- **Multiple sensors share orange/red for 5v and orange/black for 0v.** Fine if bussed to the same ECU rail, but document splice points per branch for troubleshooting.
-
-- **Fuel Pump PDM wire listed as green** — gauge not explicitly stated in harness order (12ga implied by Main Plug inner ring grouping). Confirm.
+| Wire Name                 | Color         |
+| ------------------------- | ------------- |
+| Wheel DRS Button          | yellow/green  |
+| Dash Back Button          | orange/green  |
+| GND                       | black         |
+| Dash Encoder DT           | yellow/white  |
+| GND                       | black         |
+| Dash Potentiometer Signal | orange/grey   |
+| Dash Shift Light PWM      | yellow/purple |
+| Dash Encoder CLK          | orange/yellow |
+| Dash Menu Button          | yellow/red    |
+| Riverdi 3.3v              | orange/blue   |
+| Dash Encoder SW           | orange/white  |
 
 ---
 
-## Wire Color Quick Reference
+## Wire Color Quick Reference (Full Car)
 
 ### Ignition Signal (ECU → Coil Igniters)
 
@@ -168,7 +183,7 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 | Injector 3 PDM return | green/blue | 20ga |
 | Injector 4 PDM return | green/white | 20ga |
 
-### Sensor Signals
+### Engine Sensor Signals
 
 | Wire Name | Color | Gauge |
 |-----------|-------|-------|
@@ -187,7 +202,7 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 | Gear Position Sensor signal | orange/grey | 20ga |
 | Gear Neutral Switch | yellow/grey | 20ga |
 
-### Sensor Power & Ground
+### Engine Sensor Power & Ground
 
 | Wire Name | Color | Gauge |
 |-----------|-------|-------|
@@ -195,12 +210,22 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 | Sensor 0v bus | orange/black | 20ga |
 | Sensor 0v bus | orange/white | 20ga |
 
+### Pneumatic Shift & Brake (Engine Harness)
+
+| Wire Name | Color | Gauge |
+|-----------|-------|-------|
+| Pneumatic Upshift | yellow/blue | 20ga |
+| Pneumatic Downshift | yellow/brown | 20ga |
+| Pneumatic Positive | white/purple | 20ga |
+| Brake Positive | orange/red | 20ga |
+| Brake Negative | orange/black | 20ga |
+
 ### Communication
 
 | Wire Name | Color | Gauge |
 |-----------|-------|-------|
-| CAN Lo (LTC Module) | blue | 22ga |
-| CAN Hi (LTC Module) | green | 22ga |
+| CAN Lo | blue | 22ga |
+| CAN Hi | green | 22ga |
 
 ### High-Current Power
 
@@ -210,13 +235,56 @@ choose wire color for fan switch from ecu -> pdm (brown/white)
 | LTC Module battery − | black | 12ga |
 | Fuel Pump PDM power | green | 12ga |
 | Fuel Pump battery − | black | 12ga |
+### PDM ↔ ECU
 
-### Pneumatic Shift & Brake
+| Wire Name      | Color       | Gauge |
+| -------------- | ----------- | ----- |
+| ECU Fan Switch | brown/white | 20ga  |
+| ECU 12v        | brown       | 16ga  |
 
-| Wire Name               | Color        | Gauge |
-| ----------------------- | ------------ | ----- |
-| Pneumatic Upshift 12V   | yellow/blue  | 20ga  |
-| Pneumatic Downshift 12V | yellow/brown | 20ga  |
-| Pneumatic GND           | blue/black   | 20ga  |
-| Brake Positive          | orange/red   | 20ga  |
-| Brake Negative          | orange/black | 20ga  |
+### Front Harness — Brake Pressure Sensors
+
+| Wire Name                   | Color        | Gauge |
+| --------------------------- | ------------ | ----- |
+| Sensor 5v B (front brake)   | white/red    | 20ga  |
+| Sensor 0v B (front brake)   | green/black  | 20ga  |
+| Front Brake Pressure signal | green/gray   | 20ga  |
+| Rear Brake Pressure signal  | green/orange | 20ga  |
+
+### Front Harness — Driver Switches & Inputs
+
+| Wire Name | Color | Gauge |
+|-----------|-------|-------|
+| Launch Switch | white/blue | 20ga |
+| Anti Lag Switch | green/purple | 20ga |
+| Starter Button Return | white/green | 20ga |
+| Cockpit Kill (and BOTS) Return | white/brown | 20ga |
+| Upshift Paddle | blue/orange | 20ga |
+| Downshift Paddle | green/blue | 20ga |
+| Brake Switch | blue/gray | 20ga |
+| Fuel Pump Switch | white/orange | 20ga |
+| Inj/Ign Enable Switch | blue/brown | 20ga |
+| Fan Override Switch | white/purple | 20ga |
+
+### Front Harness — Power & Ground
+
+| Wire Name | Color | Gauge |
+|-----------|-------|-------|
+| Dash PDM 12v | blue/red | 20ga |
+| PDM 0v | white/black | 20ga |
+| PDM 0v | blue/green | 20ga |
+| GND (chassis) | black | — |
+
+### Front Harness — Dash Connector Hub
+
+| Wire Name                 | Color         | Gauge |
+| ------------------------- | ------------- | ----- |
+| Wheel DRS Button          | yellow/green  | 20ga  |
+| Dash Back Button          | orange/green  | 20ga  |
+| Dash Encoder DT           | yellow/white  | 20ga  |
+| Dash Potentiometer Signal | orange/grey   | 20ga  |
+| Dash Shift Light PWM      | yellow/purple | 20ga  |
+| Dash Encoder CLK          | orange/yellow | 20ga  |
+| Dash Menu Button          | yellow/red    | 20ga  |
+| Riverdi 3.3v              | orange/blue   | 20ga  |
+| Dash Encoder SW           | orange/white  | 20ga  |

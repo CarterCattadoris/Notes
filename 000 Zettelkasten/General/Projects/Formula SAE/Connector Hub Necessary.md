@@ -15,9 +15,9 @@ Cockpit Kill (and BOTS) return - white/brown
 Dash PDM 12v - blue/red
 GND - (black, to chassis, not in harness)
 Upshift Paddle - blue/orange
-Downshift Paddle - blue/green
+Downshift Paddle - green/blue
 brake switch - blue/gray
 Fuel Pump switch - white/orange
 inj/ign enable switch - blue/brown 
 fan override switch - white/purple
-PDM 0V - white/black
+PDM 0V - white/blackblue/green
