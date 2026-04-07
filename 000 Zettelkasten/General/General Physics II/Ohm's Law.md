@@ -1,6 +1,6 @@
 202501231558
 Status: #idea
-Tags:[[ELE]], [[CSE]]
+Tags:[[ELE]], [[Zettelkasten/000 Zettelkasten/CSE/CSE]]
 
 [[Voltage]] = [[Resistance]] $\cdot$ [[Current]]
 

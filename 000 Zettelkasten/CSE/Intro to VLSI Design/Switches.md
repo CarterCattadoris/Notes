@@ -1,6 +1,6 @@
 202501231608
 Status: #idea
-Tags:[[CSE]]
+Tags:[[Zettelkasten/000 Zettelkasten/CSE/CSE]]
 
 A switch has 3 parts"
 - Source input and output

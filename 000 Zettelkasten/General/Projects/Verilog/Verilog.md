@@ -1,5 +1,5 @@
 202602121248
 Status: #MOC
-Tags:[[CSE]]
+Tags:[[Zettelkasten/000 Zettelkasten/CSE/CSE]]
 
 Learning Verilog Language

@@ -3,7 +3,7 @@
 
 ## 🧭 Quick Navigation
 **Maps of Content (MOCs)**:
-*   [[CSE]] **Computer Science & Engineering**
+*   [[Zettelkasten/000 Zettelkasten/CSE/CSE]] **Computer Science & Engineering**
     *   *Digital Logic, Architecture, Systems, VLSI, Embedded*
 *   [[ELE]] **Electrical Engineering**
     *   *Linear Systems, Deep Learning*

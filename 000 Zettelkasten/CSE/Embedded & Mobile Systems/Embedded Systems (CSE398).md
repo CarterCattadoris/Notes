@@ -1,6 +1,6 @@
 202601281800
 Status: #MOC
-Tags:[[CSE]]
+Tags:[[Zettelkasten/000 Zettelkasten/CSE/CSE]]
 
 
 ---
