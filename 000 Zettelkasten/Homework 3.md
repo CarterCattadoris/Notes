@@ -80,13 +80,19 @@ $Q_{2}= 1.39$
 $Q_{3}= 2.77$
 $IQR= 2.77-2.58 = 2.2$
 ### 3. Support and mode
-
-
+Support: $[0,\infty]$
+Mode: 0 since f(x) is decreasing
 ## B. Sample Desc Stats
 
 ### 1. Order data
-
+$0.2, 0.5, 0.8, 1.1, 1.6, 2.0, 2.6, 3.0, 3.5, 5.2$
 ### 2. Center
+mean:$\overline x= (0.2 + 0.5 + 0.8 + 1.1 + 1.6 + 2.0 + 2.6 + 3.0 + 3.5 + 5.2) / 10 = 20.5 / 10$$\overline x = 2.05$
+median: 
+$(1.6+2)/2=1.8$
+Mode:
+none repeat, so none
+
 
 ### 3. Spread
 
