@@ -92,8 +92,38 @@ median:
 $(1.6+2)/2=1.8$
 Mode:
 none repeat, so none
-
-
 ### 3. Spread
+(0.2 − 2.05)² = (−1.85)² = 3.4 
+(0.5 − 2.05)² = (−1.55)² = 2.4 
+(0.8 − 2.05)² = (−1.25)² = 1.6 
+(1.1 − 2.05)² = (−0.95)² = 0.9 
+(1.6 − 2.05)² = (−0.45)² = 0.2 
+(2.0 − 2.05)² = (−0.05)² = 0.0 
+(2.6 − 2.05)² = (0.55)² = 0.3 
+(3.0 − 2.05)² = (0.95)² = 0.9 
+(3.5 − 2.05)² = (1.45)² = 2.1 
+(5.2 − 2.05)² = (3.15)² = 9.9
+sum = 21.7
+
+variance: 21.7250 / 9 = 2.41
+std dev: √2.4139 = 1.55
+range = 5.2-0.2 = 5
+
+Quartiles:
+lower half:
+0.2, 0.5, 0.8, 1.1, 1.6, median = 0.80
+
+Upper half: 2.0, 2.6, 3.0, 3.5, 5.2 median = 3.00
+
+IQR = 3.00 − 0.80 = 2.20
 
 ### 4. Compare to theory
+mean 2.05 vs 2 is very close
+median of 1.8 vs 1.39 is kinda close with sample being higher
+range 5 vs infinity, theoretical is always going to have an infinite range
+IQR 2.2 vs 2.2 is identical
+
+The sample mean and IQR closely match theoretical values. The sample median is higher than the theoretical median, which is expected sampling variability with only n = 10. The sample range is finite while the theoretical range is infinite, since a small sample is unlikely to capture extreme values.
+
+The distribution is right-skewed, confirmed by the sample mean (2.05) exceeding the median (1.80). Large values like 5.2 pull the mean upward. With n = 10, all differences from theory are attributable to normal sampling variability.
+
