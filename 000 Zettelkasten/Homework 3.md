@@ -56,3 +56,24 @@ Mean is very close, with 5.12 vs 5
 median is 5.25 vs 5 which is also pretty close
 range is 5.4 vs 6, pretty close but smaller as expected from a smaller sample
 IQR is 3.8 vs 3 sample IQR is larger likely due to smaller sample variability 
+
+# Part 2
+
+## A. Theory
+
+### 1. Mean and Variance
+$$E[X] = \int_0^\infty x\lambda e^{-\lambda x}dx = -x e^{-\lambda x} + \int_0^\infty e^{-\lambda x}dx = 0 + \frac{1}{\lambda} = \frac{1}{\lambda}$$
+
+### 2. Median quartiles IQR
+
+### 3. Support and mode
+
+## B. Sample Desc Stats
+
+### 1. Order data
+
+### 2. Center
+
+### 3. Spread
+
+### 4. Compare to theory
