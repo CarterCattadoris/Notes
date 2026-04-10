@@ -66,12 +66,18 @@ IQR is 3.8 vs 3 sample IQR is larger likely due to smaller sample variability
 $$E[X] = \int_0^\infty x\lambda e^{-\lambda x}dx = -x e^{-\lambda x} + \int_0^\infty e^{-\lambda x}dx = 0 + \frac{1}{\lambda} = \frac{1}{\lambda}$$
 $E[X] = 1 / 0.5 = 2$
 (b) $E[X^2]$ and $Var(X)$
-$$E[X^2] = \int_0^\infty x^2\lambda e^{-\lambda x}dx  = x^2e^{-\lambda x} + \int_0^\infty 2x e^{-\lambda x}dx = $$$$\left[ \frac{2x}{\lambda} e^{-\lambda x} \right]_{0}^\infty + \int_{0}^\infty \frac{2}{\lambda}e^{-\lambda x}dx = \frac{2}{\lambda\left[ -\frac{1}{\lambda} \right]}
+$$E[X^2] = \int_0^\infty x^2\lambda e^{-\lambda x}dx  = x^2e^{-\lambda x} + \int_0^\infty 2x e^{-\lambda x}dx = $$$$\left[ \frac{2x}{\lambda} e^{-\lambda x} \right]_{0}^\infty + \int_{0}^\infty \frac{2}{\lambda}e^{-\lambda x}dx = \frac{2}{\lambda}\left[ -\frac{1}{\lambda}e^{-\lambda x} \right]_{0}^\infty =$$ $$\frac{2}{\lambda}\left( 0-\left( -\frac{1}{\lambda} \right) \right)
 
 = \frac{2}{\lambda^2}$$
+$E[X²] = 2 / (0.5)² = 2 / 0.25 = 8$
 
+$$Var(X) = E[X^2] - (E[X])^2 = \frac{2}{\lambda^2} - \frac{1}{\lambda^2} = \frac{1}{\lambda^2}$$
+$Var(X) = \frac{1}{0.5^2}=4$
 ### 2. Median quartiles IQR
-
+$Q_{1}=$
+$Q_{2}=$
+$Q_{3}=$
+$IQR=$
 ### 3. Support and mode
 
 ## B. Sample Desc Stats
