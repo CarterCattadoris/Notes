@@ -7,7 +7,7 @@ Aquacuts precision machining gave us freely moving linkage to get clean data​
 
 AiM data logger with data transmission through RF on a LoRA module to a live dashboard​​
 
-Linear pots parallel to shocks​
+Linear potentiometers parallel to shocks​
 
 Derive shock velocity, Motion ratios, how much stroke were using and if were hitting bump stops​
 
