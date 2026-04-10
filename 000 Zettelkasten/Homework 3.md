@@ -62,7 +62,13 @@ IQR is 3.8 vs 3 sample IQR is larger likely due to smaller sample variability
 ## A. Theory
 
 ### 1. Mean and Variance
+(a) $E[X]$
 $$E[X] = \int_0^\infty x\lambda e^{-\lambda x}dx = -x e^{-\lambda x} + \int_0^\infty e^{-\lambda x}dx = 0 + \frac{1}{\lambda} = \frac{1}{\lambda}$$
+$E[X] = 1 / 0.5 = 2$
+(b) $E[X^2]$ and $Var(X)$
+$$E[X^2] = \int_0^\infty x^2\lambda e^{-\lambda x}dx  = x^2e^{-\lambda x} + \int_0^\infty 2x e^{-\lambda x}dx = $$$$\left[ \frac{2x}{\lambda} e^{-\lambda x} \right]_{0}^\infty + \int_{0}^\infty \frac{2}{\lambda}e^{-\lambda x}dx = \frac{2}{\lambda\left[ -\frac{1}{\lambda} \right]}
+
+= \frac{2}{\lambda^2}$$
 
 ### 2. Median quartiles IQR
 
