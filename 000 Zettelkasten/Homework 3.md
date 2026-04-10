@@ -26,9 +26,33 @@ $IQR = 6.5-3.5 = 3$
 ## B. Sample Descriptive Statistics
 
 ### 1. Order the Data
-
+$2.4, 2.9, 3.1, 3.9, 4.8, 5.7, 6.3, 6.9, 7.4, 7.8$
 ### 2. Center
-
+$\overline{x} = \frac{2.4 + 2.9 + 3.1 + \dots}{10} = \frac{51.2}{10} = 5.12$
+$median = \frac{4.8+5.7}{2}=5.25$
+mode: no values repeat
 ### 3. Spread
+$2.4-5.12=-2.72^2= 7.4$
+$2.9-5.12=-2.22^2=4.9$
+$3.1-5.12=-2.02^2=4.1$
+$3.9-5.12=-1.22^2=1.5$
+$4.8-5.12=0.32^2=0.1$
+$5.7-5.12=0.58^2=0.3$
+$6.3-5.12=1.18^2=1.4$
+$6.9-5.12=1.78^2=3.2$
+$7.4-5.12=2.28^2=5.2$
+$7.8-5.12=2.68^2=7.2$
+sum = 35.3
 
+sample variance = $\frac{35.3}{9}=3.92$
+sample std dev = $\sqrt{ 3.92 }=1.98$
+range = 7.8-2.4=5.4
+Quartiles:
+lower half = (2.4,2.9,3.1,3.9,4.8), Q1 = 3.1
+Upper = (5.7,6.3,6.9,7.4,7.8), Q3 = 6.9
+IQR = 6.9 - 3.1 = 3.8
 ### 4. Comparison to theory
+Mean is very close, with 5.12 vs 5
+median is 5.25 vs 5 which is also pretty close
+range is 5.4 vs 6, pretty close but smaller as expected from a smaller sample
+IQR is 3.8 vs 3 sample IQR is larger likely due to smaller sample variability 
