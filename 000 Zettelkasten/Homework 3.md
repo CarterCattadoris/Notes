@@ -74,11 +74,13 @@ $E[X²] = 2 / (0.5)² = 2 / 0.25 = 8$
 $$Var(X) = E[X^2] - (E[X])^2 = \frac{2}{\lambda^2} - \frac{1}{\lambda^2} = \frac{1}{\lambda^2}$$
 $Var(X) = \frac{1}{0.5^2}=4$
 ### 2. Median quartiles IQR
-$Q_{1}=$
-$Q_{2}=$
-$Q_{3}=$
-$IQR=$
+Using $Q_q = −(1/λ) ln(1 − p(q)) = −2 ln(1 − p(q)):$
+$Q_{1}= 0.58$
+$Q_{2}= 1.39$
+$Q_{3}= 2.77$
+$IQR= 2.77-2.58 = 2.2$
 ### 3. Support and mode
+
 
 ## B. Sample Desc Stats
 
