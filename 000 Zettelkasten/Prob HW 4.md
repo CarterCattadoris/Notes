@@ -16,21 +16,19 @@ $~95\%$ of data in $μ ± 2σ$, between 54 and 86
 $~99.7\%$ of data in $μ ± 3σ$, between 46 and 94
 ### Part 1C
 
-**1.** A bin width of 5 would be reasonable. With a range of roughly 46 to 94 (6σ = 48 units), this gives about 10 bins — enough to show the bell shape without being too noisy for n = 100 observations.
+**1.** A bin width of 5 would be reasonable. With a range of roughly 46 to 94 ($\pm 3\sigma$), this gives about 10 bins which is enough to show the bell shape without being too noisy for 100 observations.
 
-**2.** _(Hand-sketch a histogram that is roughly bell-shaped, centered at 70, with the tallest bars near 70 and shorter bars tapering off symmetrically on both sides.)_
+**2.** Also on paper with submission
 
-**3.** The histogram should be approximately symmetric and bell-shaped, centered around 70, with most values between 54 and 86 and spread decreasing as you move away from the center.
+**3.** The histogram should be symmetric and bell shaped, centered around 70, with most values between 54 and 86
 
-**4.** With n = 100 observations from a normal population, the histogram approximates the smooth normal curve. As sample size increases, the histogram bars align more closely with the theoretical pdf due to the law of large numbers.
+**4.** With 100 observations from a normal population, the histogram approximates the smooth curve. As sample size increases, the histogram bars align more closely with the theoretical pdf
 
----
-
-## Part 2 — Using Python
+## Part 2
 
 ### Before Running the Code
 
-**1.** `np.random.seed()` sets a fixed starting point for the random number generator so that the results are reproducible — running the code multiple times produces the same "random" data.
+**1.** `np.random.seed()` sets a fixed starting point for the random number generator so that the results are reproducible
 
 **2.** Library: **NumPy** (`numpy`). Function: `np.random.normal()` generates random samples from a normal distribution.
 
