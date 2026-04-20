@@ -38,4 +38,4 @@ $~99.7\%$ of data in $μ ± 3σ$, between 46 and 94
 
 ## Extension
 
-When the sample size increases from 100 to 1,000, the histogram becomes noticeably smoother and more closely mirrors the theoretical normal curve. The bars are more uniform in their progression and the bell shape is cleaner. This happens because a larger sample better represents the population, reducing the effect of random variation in any single bin.
+When the sample size increases from 100 to 1,000, the histogram becomes noticeably smoother and more closely mirrors the theoretical normal curve. This happens because a larger sample better represents the population, reducing the effect of random variation.
