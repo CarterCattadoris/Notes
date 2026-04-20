@@ -1,11 +1,7 @@
 
 Carter C:
 12:453:35 monday
-Cleaned up RC car wiring
-debugged power delivery issue, replaced screen and buck converter
+Worked on gathering training data for new model and training it
 
-5:00-8:30 monday
-Worked on system integration with model and connections
-
-12:45  3:35 wednesday
-Worked on path planning, and object avoidance
+12:453:35 wednesday
+validated the new model and improved path planning and general UI
