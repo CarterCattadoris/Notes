@@ -37,6 +37,11 @@ K_wheel = 350 × (1.0)² × cos²(30°) = 350 × 0.75 = 262.5 lb/in
 f = (1/6.28) × √(262.5 × 386.4 / 149) = 4.15 Hz ← kinda too stiff
 ```
 
+5 before
+6.5 after
+20 to wheel
+
+
 ---
 
 ## New Setup
