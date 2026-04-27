@@ -44,9 +44,6 @@ $p ≈ 0.82 ≫ 0.05$ → fail to reject H₀.
 
 1. Yes, $µ₀ = 250$ lies inside the 95% CI $(247.63, 256.04).$
 2. Therefore a two-sided test at $α = 0.05$ would also fail to reject µ₀ = 250
-
----
-
 ## Part C
 ### C0
 
@@ -84,7 +81,5 @@ $p < 0.001 ≪ 0.05 → reject H₀.$
 **Conclusion in context:** There is overwhelming evidence that the population correlation $ρ$ between hours studied and exam score is not zero. Since r > 0, the relationship is positive.
 ## Quick reflection
 
-1. The CI ↔ two-sided test duality (B5)
-2. 
-3. — once you see that "is µ₀ inside the 95% CI?" answers the same question as "is p > 0.05?", both procedures stop feeling like separate tools.
-4. **Still fuzzy:** Why we can't say "there's a 95% probability µ is in this specific interval." Question for class: how does the interpretation change under a Bayesian credible interval, and when does that distinction matter in practice?
+1. The CI ↔ two-sided test duality (B5) once you see that $µ₀$ is inside 95% CI you see also see that p > 0.05. 
+2. If a 95% CI and a two-sided test at $α = 0.05$ always agree, why do we learn both?
