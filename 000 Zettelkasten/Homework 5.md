@@ -53,44 +53,38 @@ $p ≈ 0.82 ≫ 0.05$ → fail to reject H₀.
 Positive. Higher study hours track with higher exam scores across the table.
 
 ### C1
+$\overline{x} = 5.4$
+$s_{x} = 2.2$
+$\overline{y} = 75.9$
+$s_{y}=9.8$
+$s_{xy} = 21.6$
+$r = 0.9943$
 
-|Statistic|Value|
-|---|---|
-|x̄|5.400|
-|s_x|2.221|
-|ȳ|75.900|
-|s_y|9.780|
-|s_xy|21.600|
-|**r**|**0.9943**|
+### C2
+1. $r ≈ 0.99$ indicates a very strong, positive, linear association between hours studied and exam score in this sample.
+2. Correlation does not prove causation. A lurking variable could drive both. This is observational data with no random assignment to study-hour levels, so we cannot conclude that adding study hours _causes_ higher scores.
 
-### C2. Interpretation
+### C3
 
-1. r ≈ 0.99 indicates a **very strong, positive, linear** association between hours studied and exam score in this sample.
-2. Correlation does **not** prove **causation**. A lurking variable (general conscientiousness, prior background, sleep, course difficulty per student) could drive both. This is observational data with no random assignment to study-hour levels, so we cannot conclude that adding study hours _causes_ higher scores.
+**Hypotheses:** $H₀: ρ = 0 vs. Hₐ: ρ ≠ 0$
 
-### C3. Hypothesis test for correlation
-
-**Hypotheses:** H₀: ρ = 0 vs. Hₐ: ρ ≠ 0
-
-**Distribution under H₀:** t with **df = n − 2 = 8.**
+**Distribution under $H_0$:** t with $df = n − 2 = 8.$
 
 **Test statistic:**
 
 $$t = r\sqrt{\frac{n-2}{1-r^2}} = 0.9943\sqrt{\frac{8}{1-0.9887}} = 26.44$$
 
-**p-value (two-sided):** p = 2·P(T₈ ≥ 26.44). From the t-table at df = 8, the largest tabulated value is 5.041 (two-tail p = 0.001); our t is over five times larger, so **p < 0.001** (Excel `=T.DIST.2T(26.44, 8)` ≈ 5 × 10⁻⁹).
+**p-value:** $p = 2·P(T_{8} ≥ 26.44)$. From the t-table at df = 8, the largest tabulated value is 5.041. Our t is over five times larger, so p < 0.001 (Excel =T.DIST.2T(26.44, 8) ≈ 5 × 10⁻⁹).
 
-_Meaning of the p-value:_ If hours studied and exam score were truly uncorrelated in the population, the chance of observing a sample correlation this extreme is effectively zero — the data are wildly inconsistent with ρ = 0.
+**Meaning of the p-value:** If hours studied and exam score were truly uncorrelated in the population, the chance of observing a sample correlation this extreme is effectively zero
+### C4
 
-### C4. Conclusion (α = 0.05)
+$p < 0.001 ≪ 0.05 → reject H₀.$
 
-p < 0.001 ≪ 0.05 → **reject H₀.**
-
-_Conclusion in context:_ There is overwhelming evidence that the population correlation ρ between hours studied and exam score is not zero. Since r > 0, the relationship is **positive** — more hours of study are linearly associated with higher exam scores in the population these students represent.
-
----
-
+**Conclusion in context:** There is overwhelming evidence that the population correlation $ρ$ between hours studied and exam score is not zero. Since r > 0, the relationship is positive.
 ## Quick reflection
 
-1. **Most clear:** The CI ↔ two-sided test duality (B5) — once you see that "is µ₀ inside the 95% CI?" answers the same question as "is p > 0.05?", both procedures stop feeling like separate tools.
-2. **Still fuzzy:** Why we can't say "there's a 95% probability µ is in this specific interval." Question for class: how does the interpretation change under a Bayesian credible interval, and when does that distinction matter in practice?
+1. The CI ↔ two-sided test duality (B5)
+2. 
+3. — once you see that "is µ₀ inside the 95% CI?" answers the same question as "is p > 0.05?", both procedures stop feeling like separate tools.
+4. **Still fuzzy:** Why we can't say "there's a 95% probability µ is in this specific interval." Question for class: how does the interpretation change under a Bayesian credible interval, and when does that distinction matter in practice?
