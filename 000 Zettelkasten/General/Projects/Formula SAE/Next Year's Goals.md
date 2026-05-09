@@ -8,3 +8,5 @@ Tags:[[Formula SAE]]
 
 Rules:
 pneumatic T1.6.3
+Lap belt must be critical fasteners
+ON/OFF stickers + ele. shutoff sticker for side kill switch
