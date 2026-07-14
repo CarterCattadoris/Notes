@@ -115,9 +115,37 @@ Parts **not** individually deep-verified: LMR36015 buck (BUCK1) — not in the e
 - RC filters (R26/C26 @159 kHz, R3/C3 @15.9 Hz), decoupling networks, inrush (+3V0 settles to 3.0 V), and rail-clamp protection (D2 @12 V, D3 @3.3 V) all pass.
 - **Warn:** GPS-section LC filter (L2 27 nH / C26) shows Q≈116, +40 dB peak at 3.06 MHz. This is the standard *ideal-inductor-no-DCR* SPICE artifact — real ferrite/inductor loss damps it. Confirm L2's series resistance/damping, but not expected to be a real resonance.
 
+## Per-pin trace verification (critical parts)
+
+Three-way cross-check: symbol-library pin numbering ↔ datasheet package pinout ↔ schematic net assignment.
+
+### BUCK1 — LMR36015AQRNXRQ1 (12→3.3 V buck) — ✅ PASS
+All 12 pins match the datasheet (RNX VQFN-HR) by number: PGND(1,11)→GND, VIN(2,10)→+12V, BOOT(4)→BUCKBOOT, VCC(5)→BUCKVCC (1µF), AGND(6)→GND, FB(7)→BUCKFB (R6/R7 divider, SPICE→3.31 V), SW(12)→BUCKSW.
+- **PG(8)→GND**: power-good is open-drain and unused; the datasheet explicitly permits grounding PG when unused. Not a fault.
+- **EN(9)→+12V**: always-on; datasheet permits tying EN directly to VIN.
+- **NC(3)** unconnected in schematic — acceptable (no internal connection).
+
+### USB1 — USB4105-GF-A (USB-C receptacle) — ✅ PASS
+Symbol pin numbering matches the datasheet. D+ (A6/B6) and D− (A7/B7) route through U2 (USBLC6) ESD protection between connector and MCU; secondary pair tied to primary (correct for USB 2.0, orientation-independent). CC1(A5)/CC2(B5) each have a **5.11 kΩ Rd pulldown (R9/R8)** = correct UFP/sink role.
+- **All four VBUS pins (A4/A9/B4/B9) → NO_CONNECT**: intentional — board is self-powered from +12 V; USB is data/programming only. Valid.
+- **Low-priority note:** the USBLC6 VBUS clamp pin (U2.5) is also floating. Data-line ESD clamping still works via the internal TVS; tying VBUS to a rail would be marginally better, but there is no VBUS rail here.
+
+### Sensor SPI bus (ESP32 ↔ ADS7038 ↔ ASM330) — ✅ PASS
+- SCLK: ESP32 IO13 →R2→ ADC1.13 + U4.13 (shared, series-terminated)
+- MOSI: ESP32 IO12 →R1→ ADC1.14 (SDI) + U4.14 (SDI, series-terminated)
+- MISO: ESP32 IO14 ← R22/R23 (per-peripheral isolation) ← ADC/IMU SDO
+- **CS lines distinct** — ADC_CS = IO21→R4→ADC1.11; IMU_CS = IO47→R5→U4.12. No CS conflict.
+- **SD card on a separate SDIO bus** (GPIO43/44), not on the sensor SPI bus — no contention.
+- All ESP32-S3 GPIOs valid; SPI via GPIO matrix (~40 MHz cap, ample for both sensors).
+
+## Component lifecycle & temperature audit
+
+Ran against the automotive −40/125 °C range. **Temperature: 0 violations.** **Lifecycle: inconclusive** — all 30 unique MPNs returned `unknown` (LC-004) because only the no-auth LCSC source was reachable and it doesn't expose lifecycle status. No part came back EOL/NRND, but that is *absence of evidence*, not confirmation of active status. A real verdict needs DigiKey/Mouser/element14 API credentials.
+
 ## Not performed / limits
 
-- **Per-pin trace** limited to the power path; full per-pin verification of ESP32/ADC/CAN against datasheet + symbol library pending (see below).
+- **Per-pin trace of remaining parts** — SN65HVD230 (CAN), NEO-M9N (GPS), microSD, and passives not exhaustively traced (extractions exist for the ICs; SD/GPS pinouts spot-checked only).
+- **Lifecycle status** — inconclusive without a credentialed distributor API (see above).
 - **Lifecycle/obsolescence audit** — skipped (no MPN properties, needs distributor API/network). Re-run after adding MPNs.
 - **Prior-review delta** — none; this is the first recorded review (`analysis/manifest.json` had no prior runs).
 - **Deep pin-map verification** limited to the power path + supply ratings. A full per-pin trace of the ESP32 (41 pads), ADS7038 SPI bus, and CAN transceiver against datasheets was not exhaustively performed — recommended before release given the analyzer relies on the (custom `CitrusSymbols`) library pinouts, which are the potential source of a consistency-invisible error.
