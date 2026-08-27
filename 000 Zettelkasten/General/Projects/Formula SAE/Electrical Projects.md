@@ -16,7 +16,6 @@ Tags:
 - New screen
 	- Integrated into steering wheel?
 	- 4 input: 12V, GND, CAN lo/hi
-	- 
 
 Project deliverables:
 System engineering overview
